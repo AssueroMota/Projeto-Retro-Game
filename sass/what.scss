@@ -1,0 +1,144 @@
+.What-Container {
+    margin-top: 8rem;
+    background: linear-gradient(146deg, #B53F00 -319.51%, #591901 343.69%);
+
+    .What-Container-title {
+        max-width: 100%;
+        border: .1px solid transparent;
+
+        .What-title {
+            width: 598px;
+            color: #FFF;
+            text-align: center;
+            font-family: Poppins;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 110%;
+            margin: auto;
+            margin-top: 8rem;
+            margin-bottom: 4rem;
+
+            @media (max-width:1024px) {
+                width: 382px;
+            }
+        }
+    }
+
+    .What-Service {
+
+        display: flex;
+        padding: 32px;
+        flex-direction: row;
+        align-items: center;
+        gap: 32px;
+
+        @media (max-width:1024px) {
+            grid-gap: 0 25px;
+            display: grid;
+            grid-auto-columns: 105%;
+            grid-auto-flow: column;
+            overflow-x: auto;
+        }
+
+        .What-Service-container {
+            display: flex;
+            width: 440px;
+            padding: 32px;
+            flex-direction: column;
+            align-items: center;
+            gap: 32px;
+            border-radius: 10px;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), #812900;
+
+            @media (max-width:1024px) {
+                display: flex;
+                flex-wrap: nowrap;
+                width: 325px;
+                padding: 32px;
+                flex-direction: column;
+                align-items: center;
+                gap: 32px;
+                border-radius: 10px;
+                background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), #812900;
+
+
+
+
+            }
+
+            .Service-img-Container {
+                border-radius: 40px;
+                background: linear-gradient(0deg, #FFF 0%, #FFF 100%), linear-gradient(275deg, #FF5600 0.75%, #FF9B00 98.54%);
+                display: flex;
+                width: 80px;
+                height: 80px;
+                justify-content: center;
+                align-items: center;
+
+                .Service-img {
+                    width: 40px;
+                    height: 40px;
+                    flex-shrink: 0;
+                }
+            }
+
+
+            .Service-Title {
+                color: #FFF;
+                text-align: center;
+                font-family: Poppins;
+                font-size: 28px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 110%;
+                /* 30.8px */
+            }
+
+            .Service-describe {
+                color: #E0E0E0;
+                text-align: center;
+                font-family: Poppins;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 175%;
+                /* 24.5px */
+            }
+        }
+
+    }
+
+    .what {
+        max-width: 100%;
+        display: flex;
+
+        .What-container-btn {
+            display: inline-flex;
+            padding: 16px;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+            border-radius: 10px;
+            border: 2px solid #FFF;
+            margin: auto;
+            margin-bottom: 8rem;
+            margin-top: 4rem;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            .What-Btn {
+                color: #FFF;
+                font-family: Poppins;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 110%;
+                /* 15.4px */
+                letter-spacing: 0.7px;
+            }
+        }
+    }
+}
