@@ -22,13 +22,16 @@ function App() {
     <>
       <Header />
       <Banner />
+      <div id='Description-main'></div>
       <Description />
       <What/>
       {/* <Movies {...moviesTranslations} /> */}
+      <div id='Photos-main'></div>
       <Photos />
       {/* <Possibilities {...pTranslations} /> */}
       {/* <Location {...lTranslations} /> */}
       {/* <Commission {...cTranslations} /> */}
+      <div id='Contact-main'></div>
       <Contact />
       <Footer />
     </>

@@ -45,7 +45,7 @@ const Photos = () => {
 
 
     return (
-        <div id="Photos-main" className="Photos-container">
+        <div className="Photos-container">
             <div className="Photos-title">
                 <h2 data-aos="fade-down">Gallery</h2>
             </div>

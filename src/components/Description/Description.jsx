@@ -13,7 +13,7 @@ const Description = () => {
 
     return (
         <>
-            <div id="Description-main" className="description">
+            <div className="description">
                 <div className='description-container'>
                     <h2 className="description-title" data-aos="fade-right">Who we are </h2>
                     <p className='description-paragraph' data-aos="fade-right">Karty serves as a third party beverage cart partner for golf courses. We collaborate with courses to optimize their beverage cart operations. Our commitment lies in boosting course profitability without imposing additional costs, all with the aim of enhancing the overall player experience.</p>
