@@ -16,9 +16,7 @@ const Description = () => {
             <div id="Description-main" className="description">
                 <div className='description-container'>
                     <h2 className="description-title" data-aos="fade-right">Who we are </h2>
-                    <p className='description-paragraph' data-aos="fade-right">Lorem ipsum dolor sit amet consectetur. Pellentesque arcu ut in arcu at nascetur. Maecenas congue at integer massa tincidunt morbi lacus. Egestas vestibulum erat sed non. Viverra magna convallis nec convallis orci integer quam neque. Arcu non venenatis nec amet amet volutpat tempor orci adipiscing. Eu etiam dignissim diam non dictum tellus massa adipiscing nisi.
-
-                        At quis in tellus bibendum senectus habitasse sed est odio. Lacus non etiam elementum amet gravida nec tempor nibh turpis. Mauris pulvinar viverra eget tempus elit urna dui dolor mi. Eu tempor ipsum eu facilisis lacus id hendrerit.</p>
+                    <p className='description-paragraph' data-aos="fade-right">Karty serves as a third party beverage cart partner for golf courses. We collaborate with courses to optimize their beverage cart operations. Our commitment lies in boosting course profitability without imposing additional costs, all with the aim of enhancing the overall player experience.</p>
                     <div className='description-btn-container'>
                         <a href="#Contact-main" style={{ textDecoration: 'none' }}><button className="description-btn" data-aos="fade-down">Contact Us</button></a>
                     </div>

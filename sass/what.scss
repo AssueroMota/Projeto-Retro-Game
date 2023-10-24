@@ -42,6 +42,7 @@
         }
 
         .What-Service-container {
+            height: 400px;
             display: flex;
             width: 440px;
             padding: 32px;
@@ -49,7 +50,8 @@
             align-items: center;
             gap: 32px;
             border-radius: 10px;
-            background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), #812900;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%),
+                #812900;
 
             @media (max-width:1024px) {
                 display: flex;

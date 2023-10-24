@@ -57,7 +57,7 @@ const Header = () => {
           {/* FIM DO SELETOR */}
 
           <a href='#Contact-main'>
-            <button className='menu-button-contact'>+1 (000) 000-0000</button>
+            <button className='menu-button-contact'>+1 (631) 626-2980</button>
           </a>
 
 

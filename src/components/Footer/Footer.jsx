@@ -24,8 +24,8 @@ const Footer = () => {
             <div className="Footer-Contacts">
                 <h3 className="Footer-Title">Contacts</h3>
                 <div className="Footer-Contacts-Email-Tel">
-                    <p className="Footer-Email">contact@karty.com</p>
-                    <p className="Footer-Tel">+1 (000) 000-0000</p>
+                    <p className="Footer-Email">Nfavoroso22@gmail.com</p>
+                    <p className="Footer-Tel">+1 (631)626-2980</p>
                 </div>
                 <div className="Footer-icon">
                     {SocialMedia.map((icon, id) => {
@@ -42,7 +42,7 @@ const Footer = () => {
 
                 </div>
                 <div className="Footer-copyright">
-                    <p>2023. Humpback Land</p>
+                    <p>2023. Karty</p>
                 </div>
             </div>
         </div>

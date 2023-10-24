@@ -19,8 +19,6 @@ const Contact = () => {
         let errosNovos = {};
         if (nome.trim() === '') {
             errosNovos.nome = 'Field required';
-        } else if (nome.trim().length <= 10) {
-            errosNovos.nome = 'Name must be more than 10 characters';
         }
         if (!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email)) {
             errosNovos.email = 'Invalid email';
@@ -44,7 +42,7 @@ const Contact = () => {
 
         if (formularioValido) {
             try {
-                const response = await fetch('https://rich-jade-leopard-shoe.cyclic.app/sendemail', {
+                const response = await fetch('Nfavoroso22@gmail.com', {
                     method: 'POST',
                     headers: {
                         'Accept': 'application/json, text/plain, */*',
@@ -141,9 +139,9 @@ const Contact = () => {
                                     onChange={(e) => setAssunto(e.target.value)}
                                 >
                                     <option value="">Select...</option>
-                                    <option value="opcao1">OPÇAO</option>
-                                    <option value="opcao2">OPÇAO</option>
-                                    <option value="opcao3">OPÇAO</option>
+                                    <option value="opcao1">Option</option>
+                                    <option value="opcao2">Option</option>
+                                    <option value="opcao3">Option</option>
                                 </select>
                                 {formEnviado && erros.assunto && (
                                     <span className="error-message">{erros.assunto}</span>
