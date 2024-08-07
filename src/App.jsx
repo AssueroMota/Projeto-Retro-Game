@@ -3,37 +3,20 @@
 import './app.css'
 import '../sass/global.scss'
 
-import Header from './components/Header/Header';
-import Banner from './components/Banner/Banner';
-import Description from './components/Description/Description';
-import Movies from './components/Movies/Movies';
-import Photos from './components/Photos/Photos';
-import Possibilities from './components/Possibilities/Possibilities';
-import Location from './components/Location/Location';
-import Commission from './components/Commission/Commission';
-import Contact from './components/Contact/Contact';
-import Footer from './components/Footer/Footer';
+import Header from './components/Header/Header.jsx';
+
 
 import 'animate.css';
-import What from './components/WhatWeDo/What';
+import SectionOne from './components/SectionOne/SectionOne.jsx';
+import SectionTwo from './components/SectionTwo/SectionTwo.jsx';
+
 
 function App() {
   return (
     <>
       <Header />
-      <Banner />
-      <div id='Description-main'></div>
-      <Description />
-      <What/>
-      {/* <Movies {...moviesTranslations} /> */}
-      <div id='Photos-main'></div>
-      <Photos />
-      {/* <Possibilities {...pTranslations} /> */}
-      {/* <Location {...lTranslations} /> */}
-      {/* <Commission {...cTranslations} /> */}
-      <div id='Contact-main'></div>
-      <Contact />
-      <Footer />
+      <SectionOne/>
+      <SectionTwo/>
     </>
   )
 }
