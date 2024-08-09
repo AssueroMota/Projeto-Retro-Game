@@ -1,5 +1,5 @@
 import React from "react";
-import line from '../../assets/img/contact/line.svg';
+import logo from '../../assets/img/contact/logo.svg';
 import line1 from '../../assets/img/contact/line1.svg';
 import location from '../../assets/img/contact/location.svg';
 import call from '../../assets/img/contact/call.svg';
@@ -51,7 +51,7 @@ const Contact = () => {
             <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
             <div className="contact-header">
                 <h2 className="contact-header-title">Fale Conosco</h2>
-                <img src={line} alt="Header Image" className="contact-header-line" />
+                <img src={logo} alt="Header Image" className="contact-header-line" />
             </div>
 
             <div className="contact-main-middle">
