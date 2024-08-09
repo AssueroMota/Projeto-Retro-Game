@@ -1,6 +1,6 @@
 import React from "react";
 import line from '../../assets/img/contact/line.svg';
-import line1 from '../../assets/img/contact/Line1.svg';
+import line1 from '../../assets/img/contact/line1.svg';
 import location from '../../assets/img/contact/location.svg';
 import call from '../../assets/img/contact/call.svg';
 import mail from '../../assets/img/contact/mail.svg';
