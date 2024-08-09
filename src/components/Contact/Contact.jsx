@@ -1,6 +1,6 @@
 import React from "react";
 import logo from '../../assets/img/contact/logo.svg';
-import line1 from '../../assets/img/contact/line1.svg';
+import line from '../../assets/img/contact/line.svg';
 import location from '../../assets/img/contact/location.svg';
 import call from '../../assets/img/contact/call.svg';
 import mail from '../../assets/img/contact/mail.svg';
@@ -19,7 +19,7 @@ const Contact = () => {
         {
             icon: location,
             title: "Localização",
-            subline: line1,
+            subline: line,
             details: [
                 "Seg a Sex de 8:00 h - 18:00 h",
                 "R. Ceará, 1221 - Funcionários, Belo Horizonte - MG"
@@ -28,7 +28,7 @@ const Contact = () => {
         {
             icon: call,
             title: "Telefone/Whatsapp",
-            subline: line1,
+            subline: line,
             details: [
                 "Seg a Sex de 8:00 h - 18:00 h",
                 "Telefone: (31) 9 8106-1715"
@@ -37,7 +37,7 @@ const Contact = () => {
         {
             icon: mail,
             title: "Email",
-            subline: line1,
+            subline: line,
             details: [
                 "Como podemos te ajudar?",
                 "Contato: contato@espacoamarelo.com"
