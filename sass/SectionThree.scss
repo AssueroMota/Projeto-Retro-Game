@@ -1,14 +1,15 @@
 .newsletter-section {
-    border: 2px solid red;
-    background-color: #032131;
+
 
     .newsletter-container {
+        margin: auto;
         border: 2px solid red;
         width: 813px;
         height: 360px;
         flex-shrink: 0;
         border-radius: 25px;
         background: var(--Basic-1, #FFF);
+        text-align: center;
 
         .newsletter-title {
             color: #032131;
@@ -18,6 +19,7 @@
             font-style: normal;
             font-weight: 400;
             line-height: normal;
+            margin-top: 28px;
         }
 
         .newsletter-description {
@@ -34,39 +36,53 @@
             font-style: normal;
             font-weight: 400;
             line-height: normal;
+            margin: auto;
+            margin-top: 28px;
         }
 
         .newsletter-form {
 
             .newsletter-input-container {
                 position: relative;
+                display: flex;
+                gap: 8px;
+                margin-top: 32px;
 
                 .newsletter-input {
                     display: flex;
                     width: 506px;
-                    height: 62px;
-                    padding: 20px;
+                    // height: 62px;
+                    padding: 20px 50px;
                     align-items: center;
                     gap: 20px;
                     flex-shrink: 0;
                     border-radius: 10px;
                     border: 1px solid rgba(112, 112, 112, 0.30);
+                    margin: auto;
+                    color: var(--Basic-2, #707070);
+                    font-family: Montserrat;
+                    font-size: 19px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
 
+                    &:focus {
+                        outline: none;
+                    }
                 }
 
                 .newsletter-input-icon {
                     position: absolute;
-                    left: 0.75rem;
+                    left: 7.25rem;
                     top: 50%;
                     transform: translateY(-50%);
                     width: 1.5rem;
                     /* Ajuste o tamanho conforme necessário */
                     height: auto;
+                    margin: auto;
                 }
 
-                .newsletter-input:focus {
-                    border-color: #007bff;
-                }
+
             }
 
             .newsletter-button {
@@ -78,6 +94,14 @@
                 border-radius: 18px;
                 background: #ECDF8D;
                 box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);
+                color: #FFF;
+                font-family: Montserrat;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                border: solid 0px;
+                margin-top: 32px;
             }
         }
     }

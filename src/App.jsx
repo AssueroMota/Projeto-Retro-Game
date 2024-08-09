@@ -10,6 +10,7 @@ import 'animate.css';
 import SectionOne from './components/SectionOne/SectionOne.jsx';
 import SectionTwo from './components/SectionTwo/SectionTwo.jsx';
 import SectionThree from './components/SectionThree/SectionThree.jsx';
+import Rodape from './components/Rodape/Rodape.jsx';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <SectionOne/>
       <SectionTwo/>
       <SectionThree/>
+      <Rodape/>
     </>
   )
 }

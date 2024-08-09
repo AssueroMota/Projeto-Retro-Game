@@ -1,0 +1,291 @@
+.footer {
+    // Estilo principal do rodapé
+    background: #54B3B5;
+    margin: 0;
+
+    .footer-top {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        margin: auto;
+        padding: 70px;
+
+        .footer-links {
+            color: #FFF;
+            font-family: Montserrat;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            display: flex;
+            gap: 68px;
+        }
+
+        .footer-social-media {
+
+            display: flex;
+            gap: 42px;
+
+            .footer-icon {
+                width: 35px;
+                height: 35px;
+                flex-shrink: 0;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+        }
+    }
+
+    .footer-middle {
+
+        .footer-contact {
+            justify-content: space-around;
+            display: flex;
+            margin: auto;
+            width: 95%;
+
+            .footer-contact-main {
+                width: 33%;
+
+                .footer-title {
+                    color: #FFF;
+                    font-family: Montserrat;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    margin: auto;
+                    text-align: center;
+                    margin-bottom: 64px;
+                }
+
+                .footer-contact-container {
+
+                    display: flex;
+                    gap: 60px;
+                    margin-bottom: 32px;
+
+                    .footer-contact-item {
+                        display: flex;
+                        gap: 12px;
+                        margin-top: 28px;
+
+                        // Espaço entre os itens
+                        .footer-contact-icon {
+                            width: 24.903px;
+                            height: 25px;
+                            flex-shrink: 0;
+                        }
+
+                        .footer-contact-label {
+                            color: #ECDF8D;
+                            font-family: Montserrat;
+                            font-size: 20px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                        }
+
+                        .footer-contact-detail {
+                            color: #FFF;
+                            font-family: Montserrat;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                            margin-top: 8px;
+                        }
+                    }
+
+                    .footer-line {
+                        width: 3px;
+                        height: 348px;
+                        background: #C5C2D6;
+                    }
+                }
+            }
+
+            .footer-about {
+                width: 33%;
+                text-align: center;
+
+                .footer-about-containter-title {
+                    display: flex;
+                    justify-content: center;
+                    gap: 16px;
+                    align-items: center;
+                    margin-bottom: 54px;
+
+                    .footer-about-logo {
+                        width: 91.455px;
+                        height: 70px;
+                        flex-shrink: 0;
+                    }
+
+                    .footer-about-title-container {
+                        display: flex;
+                        flex-direction: column;
+                        text-align: start;
+
+                        .footer-about-title-one {
+                            color: #FFF;
+                            font-family: Montserrat;
+                            font-size: 24px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: normal;
+                            letter-spacing: 2.4px;
+
+                        }
+
+                        .footer-about-title-two {
+                            color: #FFF;
+                            font-family: Montserrat;
+                            font-size: 24px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: normal;
+                            letter-spacing: 2.4px;
+
+                        }
+                    }
+                }
+
+
+                .footer-about-text {
+                    color: var(--Basic-1, #FFF);
+                    text-align: center;
+                    font-family: Montserrat;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+
+                    height: 103px;
+                    flex-shrink: 0;
+                }
+
+                .footer-line {
+                    width: 3px;
+                    height: 348px;
+                    background: #C5C2D6;
+                }
+            }
+
+            .footer-follow {
+                width: 33%;
+
+                .footer-follow-main {
+                    display: flex;
+                    gap: 16px;
+                    align-items: center;
+                    justify-content: center;
+                    // margin-bottom: 32px;
+
+                    .footer-follow-logo {
+                        width: 111px;
+                        height: 117px;
+                        flex-shrink: 0;
+                    }
+
+                    .footer-follow-content {
+                        .footer-follow-content-text {
+                            color: #FFF;
+                            font-family: Roboto;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: normal;
+                        }
+
+                        .footer-follow-button {
+                            display: flex;
+                            width: 170px;
+                            height: 39px;
+                            padding: 21px 37px;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 10px;
+                            flex-shrink: 0;
+                            border-radius: 12px;
+                            background: #ECDF8D;
+                            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);
+                            border: 0px solid;
+                            color: #FFF;
+                            font-family: Roboto;
+                            font-size: 17px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: normal;
+                        }
+                    }
+
+                }
+
+                .footer-line {
+                    width: 350px;
+                    height: 3px;
+                    background: #C5C2D6;
+                    margin: auto;
+                    margin-bottom: 16px;
+                    margin-top: 12px;
+                }
+
+                .footer-gallery {
+
+                    .footer-gallery-container {
+                        display: flex;
+                        gap: 16px;
+                        justify-content: center;
+                        margin-bottom: 16px;
+
+                        .footer-gallery-image {
+                            width: 120px;
+                            height: 120px;
+                            flex-shrink: 0;
+                            background: linear-gradient(0deg, rgba(236, 223, 141, 0.40) 0%, rgba(236, 223, 141, 0.40) 100%), url(<path-to-image>) lightgray 50% / cover no-repeat;
+                            background-blend-mode: soft-light, normal;
+                            border-radius: 16px;
+                        }
+                    }
+                }
+            }
+
+        }
+
+    }
+
+    .footer-line-main {
+        margin-top: 32px;
+        // margin-bottom: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        gap: 28px;
+
+        .footer-line {
+            width: 1379px;
+            height: 3px;
+            background: #C5C2D6;
+        }
+
+        .footer-copyright {
+            color: #FFF;
+            font-family: Montserrat;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            width: 511px;
+            height: 27px;
+            flex-shrink: 0;
+            padding: 16px;
+        }
+    }
+}

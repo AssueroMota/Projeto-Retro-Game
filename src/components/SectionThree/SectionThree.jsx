@@ -15,7 +15,7 @@ const SectionThree = () => {
                         <input
                             type="email"
                             className="newsletter-input"
-                            placeholder="Seu e-mail"
+                            placeholder="E-mail"
                         />
                         <img src={email} alt="Ícone de e-mail" className="newsletter-input-icon" />
                     </div>
