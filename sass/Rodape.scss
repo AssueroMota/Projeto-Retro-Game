@@ -65,8 +65,9 @@
                 .footer-contact-container {
 
                     display: flex;
-                    gap: 60px;
+                    gap: 94px;
                     margin-bottom: 32px;
+                    position: relative;
 
                     .footer-contact-item {
                         display: flex;
@@ -97,13 +98,18 @@
                             font-weight: 400;
                             line-height: normal;
                             margin-top: 8px;
+                            width: 80%;
                         }
+
                     }
 
                     .footer-line {
                         width: 3px;
                         height: 348px;
                         background: #C5C2D6;
+                        position: absolute;
+                        right: 2%;
+
                     }
                 }
             }
@@ -111,6 +117,7 @@
             .footer-about {
                 width: 33%;
                 text-align: center;
+                position: relative;
 
                 .footer-about-containter-title {
                     display: flex;
@@ -163,7 +170,7 @@
                     font-style: normal;
                     font-weight: 400;
                     line-height: normal;
-
+                    position: relative;
                     height: 103px;
                     flex-shrink: 0;
                 }
@@ -172,6 +179,9 @@
                     width: 3px;
                     height: 348px;
                     background: #C5C2D6;
+                    position: absolute;
+                    right: -2%;
+                    top: 20%;
                 }
             }
 
@@ -268,6 +278,7 @@
         text-align: center;
         width: 100%;
         gap: 28px;
+
 
         .footer-line {
             width: 1379px;

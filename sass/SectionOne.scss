@@ -12,7 +12,7 @@
         flex-direction: column;
         position: relative;
         gap: 48px;
-        top: 105px;
+        top: 16rem;
         width: 50%;
         left: 183px;
 
@@ -56,6 +56,17 @@
             border: solid 0px;
             margin-top: 8px;
             width: 280px;
+            transition: all .3s ease-in;
+
+            &:hover {
+                cursor: pointer;
+                background: #F5E95D;
+                /* Cor de fundo ao passar o mouse */
+                box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.10);
+                /* Sombra mais intensa */
+                color: #707070;
+                /* Cor do texto muda para destacar mais */
+            }
         }
 
         .section-one__socialmedias {
@@ -68,8 +79,9 @@
                 height: 30px;
                 flex-shrink: 0;
             }
-
+            
             .face {
+                transition: all .3s ease-in;
                 width: 46px;
                 height: 46px;
                 flex-shrink: 0;
@@ -80,6 +92,18 @@
                 align-items: center;
                 justify-content: center;
                 text-align: center;
+
+                &:hover {
+                    background: #0A5DB0;
+                    /* Tom mais escuro de azul */
+                    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.35);
+                    /* Sombra mais forte */
+                    
+                    /* Aumenta o ícone */
+                    cursor: pointer;
+                    /* Muda o cursor para indicar que é clicável */
+                }
+
 
             }
 
@@ -94,6 +118,17 @@
                 align-items: center;
                 justify-content: center;
                 text-align: center;
+                transition: all .3s ease-in;
+                &:hover {
+                    background: #1A8CD8;
+                    /* Tom mais escuro de azul */
+                    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.35);
+                    /* Sombra mais forte */
+                    
+                    /* Aumenta o ícone */
+                    cursor: pointer;
+                    /* Muda o cursor para indicar que é clicável */
+                }
             }
 
             .insta {
@@ -107,6 +142,18 @@
                 align-items: center;
                 justify-content: center;
                 text-align: center;
+                transition: all .3s ease-in;
+                &:hover {
+
+                    background: linear-gradient(223deg, #6A2A8D 4.84%, #A02A8D 37.02%, #C62A8D 49.79%, #E53A7D 56.89%, #E85F24 95.68%);
+                    /* Gradiente alterado para efeito de hover */
+                    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.35);
+                    /* Sombra mais forte */
+                    
+                    /* Aumenta o ícone */
+                    cursor: pointer;
+                    /* Muda o cursor para indicar que é clicável */
+                }
             }
         }
 

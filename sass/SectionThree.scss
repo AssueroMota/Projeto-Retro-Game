@@ -1,15 +1,19 @@
 .newsletter-section {
 
+background-color: #ECDF8D;
 
     .newsletter-container {
         margin: auto;
-        border: 2px solid red;
+        border: 0.1px solid white;
         width: 813px;
         height: 360px;
         flex-shrink: 0;
         border-radius: 25px;
         background: var(--Basic-1, #FFF);
         text-align: center;
+        margin-bottom: -9.3rem;
+        z-index: 4;
+        position: relative;
 
         .newsletter-title {
             color: #032131;

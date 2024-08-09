@@ -1,5 +1,5 @@
 import React from "react";
-import MainPhoto from '../../assets/img/sectionOne/Main-Photo.svg';
+import MainPhoto from '../../assets/img/sectionOne/MainPhoto.svg';
 import facebook from '../../assets/img/sectionOne/facebook.svg';
 import twiter from '../../assets/img/sectionOne/twiter.svg';
 import instagram from '../../assets/img/sectionOne/instagram.svg';

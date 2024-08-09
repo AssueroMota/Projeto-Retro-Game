@@ -23,6 +23,7 @@
             font-weight: 700;
             line-height: normal;
             margin-top: 64px;
+
         }
 
         .team-header-image {
@@ -31,6 +32,8 @@
             position: absolute;
             // right: 500px;
             // bottom: -600px;
+            top: 140px;
+            right: 35rem;
         }
 
     }
@@ -88,7 +91,7 @@
 
                 bottom: 0; // Ajuste conforme necessário
                 right: 0; // Ajuste conforme necessário
-                left: 0;
+                left: 37.1rem;
                 padding: 24px;
 
                 .team-experiencie-title {
@@ -137,7 +140,7 @@
             display: flex;
             flex-direction: column;
             // width: 50%;
-            border: solid 2px red;
+            // border: solid 2px red;
             gap: 20px;
 
             .experience-item {
@@ -187,6 +190,7 @@
 
     .team-section-two {
         width: 100%;
+        height: 120vh;
 
         .team-header-two {
 
@@ -213,6 +217,8 @@
                 width: 400px;
                 height: auto;
                 position: absolute;
+                right: 31%;
+                top: 42%;
             }
 
         }
@@ -282,6 +288,7 @@
                     background: var(--Basic-1, #FFF);
                     position: relative;
                     z-index: 2;
+
                     .research-item-title {
                         color: var(--Secondary, #032131);
                         text-align: center;

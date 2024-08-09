@@ -51,7 +51,7 @@ const SectionTwo = () => {
                     <img className="team-experience-image" src={trio} alt="Experiência" />
                     <div className="team-experience-summary">
                         <div className="team-experiencie-title">
-                            <span className="experience-years">+06</span>
+                            <span className="experience-years">+ 06</span>
                             <span className="experience-label">Anos de Experiência</span>
                         </div>
                         <p className="experience-description">
@@ -62,23 +62,23 @@ const SectionTwo = () => {
                 <div className="team-experience-details">
                     <div className="experience-item">
                         <img className="experience-item-image" src={check} alt="Detalhe 1" />
-                        <span className="experience-item-years">+06</span>
+                        <span className="experience-item-years">+ 06</span>
                         <p className="experience-item-description">Anos de experiência</p>
                     </div>
                     <div className="experience-item">
                         <img className="experience-item-image" src={check} alt="Detalhe 2" />
-                        <span className="experience-item-years">+06</span>
-                        <p className="experience-item-description">Anos de experiência</p>
+                        <span className="experience-item-years">+ 200</span>
+                        <p className="experience-item-description">Crianças atendidas</p>
                     </div>
                     <div className="experience-item">
                         <img className="experience-item-image" src={check} alt="Detalhe 3" />
-                        <span className="experience-item-years">+06</span>
-                        <p className="experience-item-description">Anos de experiência</p>
+                        <span className="experience-item-years">+ XX</span>
+                        <p className="experience-item-description">xxxxxxxxxxxxxx</p>
                     </div>
                     <div className="experience-item">
                         <img className="experience-item-image" src={check} alt="Detalhe 4" />
-                        <span className="experience-item-years">+06</span>
-                        <p className="experience-item-description">Anos de experiência</p>
+                        <span className="experience-item-years">+ XX</span>
+                        <p className="experience-item-description">xxxxxxxxxxxxxx</p>
                     </div>
                 </div>
             </div>

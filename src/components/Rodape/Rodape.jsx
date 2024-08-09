@@ -66,7 +66,8 @@ const Rodape = () => {
                                     <img className="footer-contact-icon" src={location} />
                                     <div className='footer-contact-content'>
                                         <p className="footer-contact-label">Localização</p>
-                                        <p className="footer-contact-detail">R. Ceará, 1221 - Funcionários, Belo Horizonte - MG</p>
+                                        <p className="footer-contact-detail">R. Ceará, 1221 - Funcionários,
+                                            Belo Horizonte - MG</p>
                                     </div>
                                 </div>
 
@@ -93,7 +94,7 @@ const Rodape = () => {
                             <p className="footer-about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate</p>
                             <p className="footer-about-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
                         </div>
-                        {/* <div className="footer-line"></div> */}
+                        <div className="footer-line"></div>
                     </div>
                     <div className="footer-follow">
                         <div className="footer-follow-main">
