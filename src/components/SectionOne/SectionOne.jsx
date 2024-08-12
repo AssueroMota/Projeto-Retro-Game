@@ -1,10 +1,15 @@
 import React from "react";
 import MainPhoto from '../../assets/img/sectionOne/MainPhoto.svg';
+import MainPhotoMobile from '../../assets/img/sectionOne/MainPhotoMobile.png';
 import facebook from '../../assets/img/sectionOne/facebook.svg';
 import twiter from '../../assets/img/sectionOne/twiter.svg';
 import instagram from '../../assets/img/sectionOne/instagram.svg';
 
+
 const SectionOne = () => {
+
+    const logoToShow = window.innerWidth > 1024 ? MainPhoto : MainPhotoMobile;
+
     return (
         <section className="section-one">
             <div className="section-one__content">
@@ -25,7 +30,7 @@ const SectionOne = () => {
                     </div>
                 </div>
             </div>
-            <img className="section-one__image" src={MainPhoto} alt="Ilustração de Terapia Ocupacional" />
+            <img className="section-one__image" src={logoToShow} alt="Ilustração de Terapia Ocupacional" />
         </section>
     );
 };

@@ -110,6 +110,7 @@ const Contact = () => {
                 <img src={img4} alt="Social Icon 4" />
                 <img src={img5} alt="Social Icon 5" />
             </section>
+            
             <SectionThree />
             <Rodape />
         </div>

@@ -1,30 +1,34 @@
-* {
-  margin: 0;
-}
-
 .header-main {
-  // border: solid 2px red;
   width: 100%;
-  position: fixed; // Torna o cabeçalho fixo
-  top: 0; // Fixa no topo da página
-  left: 0; // Alinha ao lado esquerdo da página
-  background-color: #fff; // Adicione uma cor de fundo para garantir visibilidade sobre o conteúdo
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25); // Adiciona sombra ao cabeçalho
-  z-index: 1000; // Garante que o cabeçalho fique acima do conteúdo
-  // Adicione um espaço superior para garantir que o conteúdo não fique escondido atrás do cabeçalho
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+  z-index: 1000;
   padding-top: 10px;
   padding-bottom: 10px;
-  
+
+  @media (max-width: 1024px) {
+    align-items: center;
+    display: flex;
+    width: 100%;
+  }
+
   .header {
     align-items: center;
     display: flex;
     justify-content: space-between;
     width: 95%;
 
-    .header-content {
-      img {
-        width: 628px;
-        height: 95px;
+    .header-content img {
+      width: 628px;
+      height: 95px;
+      flex-shrink: 0;
+
+      @media (max-width: 1024px) {
+        width: 318px;
+        height: 48px;
         flex-shrink: 0;
       }
     }
@@ -37,41 +41,105 @@
       .LinksHeader {
         font-family: Montserrat;
         font-size: 20px;
-        font-style: normal;
         font-weight: 700;
-        line-height: normal;
         text-decoration: none;
         color: rgba(112, 112, 112, 0.70);
-        position: relative; // Necessário para o posicionamento do pseudo-elemento
-        transition: all ease-in-out .5s;
+        position: relative;
+        transition: all ease-in-out 0.5s;
+
         &:hover {
           color: #032131;
-          font-family: Montserrat;
-          font-size: 20px;
-          font-style: normal;
-          font-weight: 700;
-          line-height: normal;
         }
 
-        // Pseudo-elemento para o sublinhado
         &::after {
-          content: ''; // Cria um pseudo-elemento vazio
-          display: block; // Faz o pseudo-elemento ocupar espaço
-          height: 2px; // Define a espessura do sublinhado
-          background-color: transparent; // Cor inicial do sublinhado
-          position: absolute; // Posiciona o pseudo-elemento em relação ao link
-          bottom: 0; // Alinha o sublinhado na parte inferior do link
+          content: '';
+          display: block;
+          height: 2px;
+          background-color: transparent;
+          position: absolute;
+          bottom: 0;
           left: 0;
-          right: 0; // Faz o sublinhado se estender por toda a largura do link
-          transition: background-color 0.5s; // Suaviza a transição da cor do sublinhado
+          right: 0;
+          transition: background-color 0.5s;
         }
 
-        // Estilo do sublinhado ao passar o mouse
         &:hover::after {
-          background-color: #ECDF8D; // Cor do sublinhado ao passar o mouse
+          background-color: #ECDF8D;
+        }
 
+        @media (max-width: 1024px) {
+          display: none;
         }
       }
+    }
+  }
+
+  .header-menu-sidebar {
+    display: none;
+
+    @media (max-width: 1024px) {
+      display: flex;
+    }
+
+    .sidebar {
+      position: fixed;
+      top: 0;
+      right: 0;
+      height: 100%;
+      background-color: #fff;
+      box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in-out;
+      z-index: 1000;
+      width: 194px;
+      border-radius: 20px 0px 0px 20px;
+      background: #ECDF8D;
+
+    }
+
+    .sidebar-open {
+      transform: translateX(0);
+      align-items: end;
+    }
+
+    .sidebar-links {
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      padding: 20px;
+      color: var(--Colors-primary, #FFF);
+      // padding: 4px;
+    }
+
+    .sidebar-links a {
+      margin: 15px 0;
+      text-decoration: none;
+      color: #333;
+      color: var(--Colors-primary, #FFF);
+      text-align: right;
+      leading-trim: both;
+      text-edge: cap;
+      font-family: Poppins;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 100%;
+      /* 18px */
+
+    }
+
+    .close-icon {
+      // position: absolute;
+      // top: 15px;
+      // left: 15px;
+      cursor: pointer;
+      width: 24px;
+      height: 24px;
+      flex-shrink: 0;
+      align-items: end;
+      margin-top: 32px;
+      padding: 8px;
+      color: #FFFFFF;
     }
   }
 }

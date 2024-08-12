@@ -24,6 +24,18 @@
             line-height: normal;
             margin-top: 64px;
 
+            @media (max-width:1024px) {
+                width: 392px;
+                height: 195px;
+                flex-shrink: 0;
+                color: var(--Basic-1, var(--Colors-primary, #FFF));
+                text-align: center;
+                font-family: Montserrat;
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
         }
 
         .team-header-image {
@@ -34,6 +46,10 @@
             // bottom: -600px;
             top: 140px;
             right: 35rem;
+
+            @media (max-width:1024px) {
+                display: none;
+            }
         }
 
     }
@@ -42,6 +58,10 @@
         display: flex;
         justify-content: center;
         margin-top: 32px;
+
+        @media (max-width:1024px) {
+            margin-top: 8px;
+        }
 
         .team-description {
             width: 1288px;
@@ -54,6 +74,19 @@
             font-style: normal;
             font-weight: 400;
             line-height: normal;
+
+            @media (max-width:1024px) {
+                width: 362px;
+                height: 88px;
+                flex-shrink: 0;
+                color: var(--Basic-1, var(--Colors-primary, #FFF));
+                text-align: center;
+                font-family: Montserrat;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
         }
     }
 
@@ -63,6 +96,12 @@
         justify-content: space-around;
         align-items: center;
 
+        @media (max-width:1024px) {
+            justify-content: normal;
+            align-items: center;
+            flex-direction: column;
+        }
+
         .team-experience-model-main {
 
             width: 50%;
@@ -71,6 +110,13 @@
             margin-top: 64px;
             position: relative;
 
+            @media (max-width:1024px) {
+                width: auto;
+                // display: flex;
+                margin-top: 0;
+                position: none;
+            }
+
             .team-experience-image {
                 width: 1043px;
                 height: 597px;
@@ -78,6 +124,15 @@
                 background: linear-gradient(0deg, rgba(236, 223, 141, 0.25) 0%, rgba(236, 223, 141, 0.25) 100%), url(<path-to-image>) lightgray -210px -131.065px / 120.134% 139.888% no-repeat;
                 background-blend-mode: soft-light, normal;
                 border-radius: 50px;
+
+                @media (max-width:1024px) {
+                    width: 380px;
+                    height: 232px;
+                    flex-shrink: 0;
+                    border-radius: 16px;
+                    background: linear-gradient(0deg, rgba(236, 223, 141, 0.25) 0%, rgba(236, 223, 141, 0.25) 100%), url(<path-to-image>) lightgray -25px -18.967px / 106.579% 116.351% no-repeat;
+                    background-blend-mode: soft-light, normal;
+                }
             }
 
             .team-experience-summary {
@@ -93,6 +148,10 @@
                 right: 0; // Ajuste conforme necessário
                 left: 37.1rem;
                 padding: 24px;
+
+                @media (max-width:1024px) {
+                    display: none;
+                }
 
                 .team-experiencie-title {
                     display: flex;
@@ -143,6 +202,10 @@
             // border: solid 2px red;
             gap: 20px;
 
+            @media (max-width:1024px) {
+                margin-top: 48px;
+            }
+
             .experience-item {
 
                 display: flex;
@@ -160,10 +223,30 @@
                 background: var(--Basic-1, #FFF);
                 box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 
+                @media (max-width:1024px) {
+                    display: flex;
+                    max-width: 342px;
+                    height: 74px;
+                    padding: 8px 20px;
+                    align-items: center;
+                    gap: 20px;
+                    flex-shrink: 0;
+                    border-radius: 25px;
+                    background: var(--Colors-primary, #FFF);
+                    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+                }
+
                 .experience-item-image {
                     width: 60px;
                     height: 59.116px;
                     flex-shrink: 0;
+
+                    @media (max-width:1024px) {
+                        width: 40px;
+                        height: 39.411px;
+                        flex-shrink: 0;
+                    }
                 }
 
                 .experience-item-years {
@@ -174,6 +257,16 @@
                     font-style: normal;
                     font-weight: 700;
                     line-height: normal;
+
+                    @media (max-width:1024px) {
+                        color: #54B3B5;
+                        text-align: center;
+                        font-family: Montserrat;
+                        font-size: 32px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                    }
                 }
 
                 .experience-item-description {
@@ -183,6 +276,15 @@
                     font-style: normal;
                     font-weight: 400;
                     line-height: normal;
+
+                    @media (max-width:1024px) {
+                        color: #54B3B5;
+                        font-family: Montserrat;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                    }
                 }
             }
         }
@@ -191,6 +293,10 @@
     .team-section-two {
         width: 100%;
         height: 120vh;
+
+        @media (max-width:1024px) {
+            height: auto;
+        }
 
         .team-header-two {
 
@@ -201,7 +307,7 @@
 
             .team-title-two {
                 width: 704px;
-                height: 150px;
+                // height: 150px;
                 flex-shrink: 0;
                 color: var(--Basic-1, #FFF);
                 text-align: center;
@@ -211,6 +317,19 @@
                 font-weight: 700;
                 line-height: normal;
                 margin-top: 64px;
+
+                @media (max-width:1024px) {
+                    width: 396px;
+                    // height: 59px;
+                    flex-shrink: 0;
+                    color: var(--Colors-primary, #FFF);
+                    text-align: center;
+                    font-family: Montserrat;
+                    font-size: 40px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                }
             }
 
             .team-header-image-two {
@@ -219,6 +338,10 @@
                 position: absolute;
                 right: 31%;
                 top: 42%;
+
+                @media (max-width:1024px) {
+                    display: none;
+                }
             }
 
         }
@@ -233,6 +356,12 @@
             flex-shrink: 0;
             margin: auto;
 
+            @media (max-width:1024px) {
+                width: auto;
+                height: auto;
+                margin-top: 48px;
+            }
+
             .team-header-content {
 
                 height: 104px;
@@ -242,6 +371,17 @@
                 font-style: normal;
                 font-weight: 500;
                 line-height: normal;
+
+                @media (max-width:1024px) {
+                    color: var(--Basic-1, var(--Colors-primary, #FFF));
+                    text-align: center;
+                    font-family: Montserrat;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    width: 376px;
+                }
 
             }
         }
@@ -260,6 +400,9 @@
                 width: 423px;
                 text-align: center;
 
+                @media (max-width:1024px) {
+                    display: none;
+                }
 
                 .research-item-image {
 

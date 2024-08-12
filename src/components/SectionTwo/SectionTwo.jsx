@@ -1,5 +1,6 @@
 import React from "react";
 import logo from '../../assets/img/sectionTwo/Logo.svg';
+import imgToShowMobile from '../../assets/img/sectionTwo/LogoMobile.png';
 import trio from '../../assets/img/sectionTwo/trio.png';
 import check from '../../assets/img/sectionTwo/check.svg';
 import workdays from '../../assets/img/sectionTwo/workdays.png';
@@ -11,6 +12,8 @@ import workdays4 from '../../assets/img/sectionTwo/workdays4.png';
 
 
 const SectionTwo = () => {
+
+    const imgToShow = window.innerWidth > 1024 ? trio : imgToShowMobile;
 
     const research = [
         {
@@ -48,7 +51,7 @@ const SectionTwo = () => {
             </div>
             <div className="team-experience">
                 <div className="team-experience-model-main">
-                    <img className="team-experience-image" src={trio} alt="Experiência" />
+                    <img className="team-experience-image" src={imgToShow} alt="Experiência" />
                     <div className="team-experience-summary">
                         <div className="team-experiencie-title">
                             <span className="experience-years">+ 06</span>

@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import menu from '../../assets/img/header/header__menu.svg';
 import close from '../../assets/img/header/menu__close.svg';
 import logo from '../../assets/img/header/Logo.svg';
+import logomobile from '../../assets/img/header/logomobile.svg';
+import MdMenu from '../../assets/img/header/MdMenu.svg';
 
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   const HeaderLinks = [
     { name: 'Home', link: '/' },
     { name: 'Nosso Espaço', link: '#What-container-main' },
@@ -12,7 +16,11 @@ const Header = () => {
     { name: 'Contato', link: '/contact' }
   ];
 
-  const logoToShow = window.innerWidth > 1024 ? logo : logo;
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const logoToShow = window.innerWidth > 1024 ? logo : logomobile;
 
   return (
     <div className="header-main">
@@ -27,6 +35,30 @@ const Header = () => {
             </Link>
           ))}
         </nav>
+
+        <div className='header-menu-sidebar'>
+          <img
+            src={MdMenu}
+            alt="Menu"
+            onClick={toggleMenu}
+            style={{ cursor: 'pointer' }}
+          />
+          <div className={`sidebar ${isOpen ? 'sidebar-open' : ''}`}>
+            <img
+              src={close}
+              alt="Close Menu"
+              onClick={toggleMenu}
+              className="close-icon"
+            />
+            <nav className="sidebar-links">
+              {HeaderLinks.map((item, id) => (
+                <Link to={item.link} key={id} onClick={toggleMenu}>
+                  {item.name}
+                </Link>
+              ))}
+            </nav>
+          </div>
+        </div>
       </header>
     </div>
   );
