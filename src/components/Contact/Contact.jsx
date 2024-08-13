@@ -13,6 +13,7 @@ import aviao from '../../assets/img/contact/aviao.svg';
 import Header from "../Header/Header";
 import Rodape from "../Rodape/Rodape";
 import SectionThree from "../SectionThree/SectionThree";
+import minimap from "../../assets/img/contact/mapmini.svg"
 
 const Contact = () => {
     const contactItems = [
@@ -48,7 +49,7 @@ const Contact = () => {
     return (
         <div className="contact-container">
             <Header />
-            <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+            
             <div className="contact-header">
                 <h2 className="contact-header-title">Fale Conosco</h2>
                 <img src={logo} alt="Header Image" className="contact-header-line" />
@@ -80,6 +81,7 @@ const Contact = () => {
                             src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d60009.193831998666!2d-43.95653311046954!3d-19.94232288215977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbr!4v1723240393717!5m2!1sen!2sbr"
                             width="1920"
                             height="1080"
+                            className="responsive-map"
                             style={{ border: "24" }}
                             allowFullScreen
                             loading="lazy"
@@ -88,6 +90,11 @@ const Contact = () => {
                             aria-label="Mapa mostrando a localização do escritório em R. Ceará, 1221 - Funcionários, Belo Horizonte - MG"
                         ></iframe>
                     </div>
+                           <img 
+                            src={minimap} 
+                            alt="Mapa Estático" 
+                            className="static-map"
+                        />
 
                     <section className="contact-form">
                         <img src={aviao} alt="Form Icon" className="aviao" />
@@ -104,6 +111,7 @@ const Contact = () => {
                 </div>
             </div>
             <section className="contact-social">
+                <h3 className="contact-social-title">Galeria</h3>
                 <img src={img1} alt="Social Icon 1" />
                 <img src={img2} alt="Social Icon 2" />
                 <img src={img3} alt="Social Icon 3" />
