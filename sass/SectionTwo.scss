@@ -395,13 +395,21 @@
             text-align: center;
             margin-bottom: 25px;
 
+            @media (max-width:1024px) {
+                display: grid;
+                grid-auto-flow: column;
+                overflow-x: auto;
+                column-gap: 0px;
+                margin-left: -1rem;
+                // flex: 0 0 auto;
+                justify-content: flex-start;
+            }
 
             .research-item {
                 width: 423px;
                 text-align: center;
-
                 @media (max-width:1024px) {
-                    display: none;
+                    text-align: start;
                 }
 
                 .research-item-image {
@@ -413,7 +421,13 @@
                     background-blend-mode: soft-light, normal;
                     border-radius: 0px 100px 0px 0px;
                     background: var(--Basic-1, #FFF);
-                    margin-bottom: -4px
+                    margin-bottom: -4px;
+                    @media (max-width:1024px) {
+                        width: 400px;
+                        // height: 405px;
+                        flex-shrink: 0;
+
+                    }
                 }
 
 
@@ -431,7 +445,11 @@
                     background: var(--Basic-1, #FFF);
                     position: relative;
                     z-index: 2;
-
+                    @media (max-width:1024px) {
+                        width: 300px;
+                        // height: 405px;
+                        flex-shrink: 0;
+                    }
                     .research-item-title {
                         color: var(--Secondary, #032131);
                         text-align: center;
