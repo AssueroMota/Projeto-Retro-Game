@@ -6,12 +6,12 @@ import twiter from '../../assets/img/sectionOne/twiter.svg';
 import instagram from '../../assets/img/sectionOne/instagram.svg';
 
 
-const SectionOne = () => {
+const SectionOne = (props) => {
 
     const logoToShow = window.innerWidth > 1024 ? MainPhoto : MainPhotoMobile;
 
     return (
-        <section className="section-one">
+        <section className="section-one" id={props.id}>
             <div className="section-one__content">
                 <h1 className="section-one__title">Terapia Ocupacional no Desenvolvimento Infantil</h1>
                 <p className="section-one__description">
@@ -20,17 +20,23 @@ const SectionOne = () => {
                 <button className="section-one__cta-button">Explore nosso Trabalho</button>
                 <div className="section-one__socialmedias">
                     <div className="face">
-                        <img src={facebook} alt="facebook" />
+                        <a href="https://facebook.com/seu_usuario" target="_blank" rel="noopener noreferrer" style={{ display: 'flex' }}>
+                            <img src={facebook} alt="facebook" />
+                        </a>
                     </div>
                     <div className="twiter">
-                        <img src={twiter} alt="twiter" />
+                        <a href="https://twitter.com/seu_usuario" target="_blank" rel="noopener noreferrer" style={{ display: 'flex' }}>
+                            <img src={twiter} alt="twiter" />
+                        </a>
                     </div>
                     <div className="insta">
-                        <img src={instagram} alt="instagram" />
+                        <a href="https://instagram.com/seu_usuario" target="_blank" rel="noopener noreferrer" style={{ display: 'flex' }}>
+                            <img src={instagram} alt="instagram" />
+                        </a>
                     </div>
                 </div>
             </div>
-            <img className="section-one__image" src={logoToShow} alt="Ilustração de Terapia Ocupacional" />
+            <img className="section-one__image" src={logoToShow} alt="Ilustração de Terapia Ocupacional"/>
         </section>
     );
 };

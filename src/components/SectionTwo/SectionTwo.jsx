@@ -11,7 +11,7 @@ import workdays4 from '../../assets/img/sectionTwo/workdays4.png';
 
 
 
-const SectionTwo = () => {
+const SectionTwo = (props) => {
 
     const imgToShow = window.innerWidth > 1024 ? trio : imgToShowMobile;
 
@@ -39,7 +39,7 @@ const SectionTwo = () => {
     ];
 
     return (
-        <section className="team-section">
+        <section className="team-section" id={props.id}>
             <div className="team-header">
                 <h1 className="team-title">Equipe Especializada no Desenvolvimento Infantil</h1>
                 <img className="team-header-image" src={logo} alt="Equipe" />
@@ -88,7 +88,7 @@ const SectionTwo = () => {
             <div className="team-section-two">
                 <div className="team-header-two">
                     <h1 className="team-title-two">Nosso espaço</h1>
-                    <img className="team-header-image-two" src={logo} alt="Equipe" />
+                    {/* <img className="team-header-image-two" src={logo} alt="Equipe" /> */}
                 </div>
                 <div className="team-header-subtitle">
                     <p className="team-header-content">

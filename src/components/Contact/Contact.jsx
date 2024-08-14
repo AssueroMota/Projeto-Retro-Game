@@ -14,24 +14,42 @@ import Header from "../Header/Header";
 import Rodape from "../Rodape/Rodape";
 import SectionThree from "../SectionThree/SectionThree";
 import minimap from "../../assets/img/contact/mapmini.svg";
-import icon from "../../assets/img/contact/icon.svg";
+import icon from "../../assets/img/contact/IconMsg.svg";
+import iconName from "../../assets/img/contact/iconName.svg";
 import icontwo from "../../assets/img/contact/telephone.svg";
 import iconfour from "../../assets/img/contact/iconfour.svg";
-import changeMail from "../../assets/img/contact/telephone.svg"; // Imagem para o email
-import changeName from "../../assets/img/contact/changetelephone.svg"; // Imagem para o nome
+import changeMail from "../../assets/img/contact/changemail.svg"; // Imagem para o email
+import changeName from "../../assets/img/contact/changename.svg"; // Imagem para o nome
 import changeTel from "../../assets/img/contact/changetelephone.svg"; // Imagem para o telefone
 import changeMsg from "../../assets/img/contact/changemsg.svg"; // Imagem para a mensagem
 
 const Contact = () => {
+    // Estados para gerenciar os valores dos inputs
+    const [email, setEmail] = useState('');
+    const [name, setName] = useState('');
+    const [phone, setPhone] = useState('');
+    const [message, setMessage] = useState('');
+
     // Estados para gerenciar as imagens dos ícones dos inputs
-    const [emailIcon, setEmailIcon] = useState(iconfour);
-    const [nameIcon, setNameIcon] = useState(iconfour);
+    const [emailIcon, setEmailIcon] = useState(icon);
+    const [nameIcon, setNameIcon] = useState(iconName);
     const [phoneIcon, setPhoneIcon] = useState(icontwo);
     const [messageIcon, setMessageIcon] = useState(iconfour);
 
+    // Estados para gerenciar a submissão do formulário
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [submitSuccess, setSubmitSuccess] = useState(false);
+    const [emailError, setEmailError] = useState('');
+
+    // Função para validar o e-mail
+    const validateEmail = (email) => {
+        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return re.test(email);
+    };
+
     // Função para alterar a imagem ao focar
     const handleFocus = (type) => {
-        switch(type) {
+        switch (type) {
             case 'email':
                 setEmailIcon(changeMail);
                 break;
@@ -51,12 +69,12 @@ const Contact = () => {
 
     // Função para alterar a imagem ao desfocar
     const handleBlur = (type) => {
-        switch(type) {
+        switch (type) {
             case 'email':
-                setEmailIcon(iconfour);
+                setEmailIcon(icon);
                 break;
             case 'name':
-                setNameIcon(iconfour);
+                setNameIcon(iconName);
                 break;
             case 'phone':
                 setPhoneIcon(icontwo);
@@ -67,6 +85,32 @@ const Contact = () => {
             default:
                 break;
         }
+    };
+
+    // Função para lidar com o envio do formulário
+    const handleSubmit = (event) => {
+        event.preventDefault();
+
+        // Valida o e-mail
+        if (!validateEmail(email)) {
+            setEmailError('E-mail inválido');
+            return;
+        }
+        
+        setEmailError(''); // Limpa o erro, se houver
+
+        setIsSubmitting(true);
+
+        // Simulação de envio de dados
+        setTimeout(() => {
+            setIsSubmitting(false);
+            setSubmitSuccess(true);
+            setEmail('');
+            setName('');
+            setPhone('');
+            setMessage('');
+            setTimeout(() => setSubmitSuccess(false), 3000); // Limpa a mensagem de sucesso após 3 segundos
+        }, 1000);
     };
 
     const contactItems = [
@@ -151,17 +195,19 @@ const Contact = () => {
                     <section className="contact-form">
                         <img src={aviao} alt="Form Icon" className="aviao" />
                         <h2 className="contact-form-title">Fale Conosco</h2>
-                        <p className="contact-form-fed">Feedbacks</p>
-                        <form className="contact-form-main">
+                        <p className="contact-form-fed">Feedbacks, Recomendações ou Dúvidas</p>
+                        <form onSubmit={handleSubmit} className="contact-form-main">
                             <div className="input-group">
                                 <div className="input-wrapper">
                                     <img
-                                        src={call}
+                                        src={emailIcon}
                                         alt="Email Icon"
                                         className="input-icon"
                                     />
                                     <input
                                         type="email"
+                                        value={email}
+                                        onChange={(e) => setEmail(e.target.value)}
                                         placeholder=""
                                         className="input-email"
                                         required
@@ -169,17 +215,20 @@ const Contact = () => {
                                         onBlur={() => handleBlur('email')}
                                     />
                                     <label htmlFor="email" className="floating-label">Email</label>
+                                    {emailError && <span className="error-message">{emailError}</span>}
                                 </div>
                             </div>
                             <div className="input-group">
                                 <div className="input-wrapper">
                                     <img
-                                        src={call}
+                                        src={nameIcon}
                                         alt="Nome Icon"
                                         className="input-icon"
                                     />
                                     <input
                                         type="text"
+                                        value={name}
+                                        onChange={(e) => setName(e.target.value)}
                                         placeholder=""
                                         className="input-name"
                                         required
@@ -198,6 +247,8 @@ const Contact = () => {
                                     />
                                     <input
                                         type="tel"
+                                        value={phone}
+                                        onChange={(e) => setPhone(e.target.value)}
                                         placeholder=""
                                         className="input-phone"
                                         required
@@ -215,6 +266,8 @@ const Contact = () => {
                                         className="input-icon-text"
                                     />
                                     <textarea
+                                        value={message}
+                                        onChange={(e) => setMessage(e.target.value)}
                                         placeholder=""
                                         className="input-message"
                                         required
@@ -225,7 +278,13 @@ const Contact = () => {
                                 </div>
                             </div>
 
-                            <button type="submit" className="submit-button">Enviar Mensagem</button>
+                            <button
+                                type="submit"
+                                className="submit-button"
+                                disabled={isSubmitting || emailError !== ''}
+                            >
+                                {isSubmitting ? 'Enviando...' : (submitSuccess ? 'Mensagem enviada com sucesso!' : 'Enviar Mensagem')}
+                            </button>
                         </form>
                     </section>
                 </div>

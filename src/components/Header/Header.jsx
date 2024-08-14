@@ -6,13 +6,16 @@ import logo from '../../assets/img/header/Logo.svg';
 import logomobile from '../../assets/img/header/logomobile.svg';
 import MdMenu from '../../assets/img/header/MdMenu.svg';
 
+
+
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+
   const HeaderLinks = [
     { name: 'Home', link: '/' },
-    { name: 'Nosso Espaço', link: '#What-container-main' },
-    { name: 'Equipe', link: '#Photos-main' },
+    { name: 'Equipe', link: '#equipe' },
+    { name: 'Nosso Espaço', link: '#space' },
     { name: 'Contato', link: '/contact' }
   ];
 
@@ -50,13 +53,29 @@ const Header = () => {
               onClick={toggleMenu}
               className="close-icon"
             />
-            <nav className="sidebar-links">
+                <nav className="sidebar-links">
+              {HeaderLinks.map((item, id) => (
+                item.link.startsWith('/') ? (
+                  <Link to={item.link} key={id} onClick={toggleMenu}>
+                    {item.name}
+                  </Link>
+                ) : (
+                  <a href={item.link} key={id} onClick={toggleMenu}>
+                    {item.name}
+                  </a>
+                )
+              ))}
+            </nav>
+
+
+
+            {/* <nav className="sidebar-links">
               {HeaderLinks.map((item, id) => (
                 <Link to={item.link} key={id} onClick={toggleMenu}>
                   {item.name}
                 </Link>
               ))}
-            </nav>
+            </nav> */}
           </div>
         </div>
       </header>

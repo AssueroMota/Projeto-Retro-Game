@@ -45,7 +45,7 @@
             // right: 500px;
             // bottom: -600px;
             top: 140px;
-            right: 35rem;
+            right: 32%;
 
             @media (max-width:1024px) {
                 display: none;
@@ -307,16 +307,17 @@
 
             .team-title-two {
                 width: 704px;
-                height: 150px;
+                // height: 150px;
                 flex-shrink: 0;
                 color: var(--Basic-1, #FFF);
                 text-align: center;
                 font-family: Montserrat;
-                font-size: 50px;
+                font-size: 55px;
                 font-style: normal;
                 font-weight: 700;
                 line-height: normal;
-                margin-top: 64px;
+                margin-top: 128px;
+                margin-bottom: 48px;
 
                 @media (max-width:1024px) {
                     width: 396px;
@@ -408,6 +409,7 @@
             .research-item {
                 width: 423px;
                 text-align: center;
+
                 @media (max-width:1024px) {
                     text-align: start;
                 }
@@ -422,6 +424,7 @@
                     border-radius: 0px 100px 0px 0px;
                     background: var(--Basic-1, #FFF);
                     margin-bottom: -4px;
+
                     @media (max-width:1024px) {
                         width: 400px;
                         // height: 405px;
@@ -445,11 +448,13 @@
                     background: var(--Basic-1, #FFF);
                     position: relative;
                     z-index: 2;
+
                     @media (max-width:1024px) {
                         width: 300px;
                         // height: 405px;
                         flex-shrink: 0;
                     }
+
                     .research-item-title {
                         color: var(--Secondary, #032131);
                         text-align: center;

@@ -11,12 +11,16 @@ import instagram from '../../assets/img/rodape/instagram.svg';
 import whatsapp from '../../assets/img/rodape/whatsapp.svg';
 import linkedin from '../../assets/img/rodape/linkedin.svg';
 import img from '../../assets/img/rodape/image.png';
-import imgOne from '../../assets/img/rodape/image.png';
+import imgOne from '../../assets/img/rodape/image1.png';
 import imgTwo from '../../assets/img/rodape/image2.png';
 import imgThree from '../../assets/img/rodape/image3.png';
 import imgFour from '../../assets/img/rodape/image4.png';
 import imgFive from '../../assets/img/rodape/image5.png';
+import { initLightboxJS } from 'lightbox.js-react'
+import 'lightbox.js-react/dist/index.css'
 
+
+import { SlideshowLightbox } from 'lightbox.js-react'
 
 import React from "react";
 
@@ -32,12 +36,23 @@ const Rodape = () => {
                 </div>
 
                 <div className="footer-social-media">
-                    <img src={twitter} alt="twitter" className="footer-icon" />
-                    <img src={facebook} alt="facebook" className="footer-icon" />
-                    <img src={instagram} alt="instagram" className="footer-icon" />
-                    <img src={whatsapp} alt="whatsapp" className="footer-icon" />
-                    <img src={linkedin} alt="linkedin" className="footer-icon" />
+                    <a href="https://twitter.com/seu_usuario" target="_blank" rel="noopener noreferrer">
+                        <img src={twitter} alt="twitter" className="footer-icon" />
+                    </a>
+                    <a href="https://facebook.com/seu_usuario" target="_blank" rel="noopener noreferrer">
+                        <img src={facebook} alt="facebook" className="footer-icon" />
+                    </a>
+                    <a href="https://instagram.com/seu_usuario" target="_blank" rel="noopener noreferrer">
+                        <img src={instagram} alt="instagram" className="footer-icon" />
+                    </a>
+                    <a href="https://wa.me/5511981061715" target="_blank" rel="noopener noreferrer">
+                        <img src={whatsapp} alt="whatsapp" className="footer-icon" />
+                    </a>
+                    <a href="https://linkedin.com/in/seu_usuario" target="_blank" rel="noopener noreferrer">
+                        <img src={linkedin} alt="linkedin" className="footer-icon" />
+                    </a>
                 </div>
+
             </div>
 
             <div className="footer-middle">
@@ -86,8 +101,8 @@ const Rodape = () => {
                         <div className="footer-about-containter-title">
                             <img src={logo} alt="Logo" className="footer-about-logo" />
                             <div className="footer-about-title-container">
+                                <p className="footer-about-title-two">Espaço <span>Amar.elo</span> </p>
                                 <p className="footer-about-title-one"> Terapia Ocupacional</p>
-                                <p className="footer-about-title-two">Espaço Amar.elo </p>
                             </div>
                         </div>
                         <div>
@@ -101,10 +116,12 @@ const Rodape = () => {
                             <img src={flower} alt="Logo" className="footer-follow-logo" />
                             <div className="footer-follow-content" >
                                 <div className="footer-follow-content-text" >
-                                    <p className="footer-follow-brand">Espaço Amar.elo</p>
+                                    <p className="footer-follow-brand">Espaço <span>Amar.elo</span></p>
                                     <p className="footer-follow-description">Terapia Ocupacional</p>
                                 </div>
-                                <button className="footer-follow-button">Follow Us</button>
+                                <a href="https://instagram.com/seu_usuario" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
+                                    <button className="footer-follow-button">Follow Us</button>
+                                </a>
                             </div>
                         </div>
                         <div className="footer-line"></div>
@@ -122,12 +139,12 @@ const Rodape = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div >
             <div className="footer-line-main">
                 <div className="footer-line"></div>
-                <p className="footer-copyright">All rights reserved. Copyright © 2024 by Logo</p>
+                <p className="footer-copyright">All rights reserved. Copyright © 2024 by EspaçoAmar.elo</p>
             </div>
-        </div>
+        </div >
     )
 }
 
