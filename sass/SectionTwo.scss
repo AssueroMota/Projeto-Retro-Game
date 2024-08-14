@@ -307,7 +307,7 @@
 
             .team-title-two {
                 width: 704px;
-                // height: 150px;
+                height: 150px;
                 flex-shrink: 0;
                 color: var(--Basic-1, #FFF);
                 text-align: center;
@@ -320,7 +320,7 @@
 
                 @media (max-width:1024px) {
                     width: 396px;
-                    // height: 59px;
+                    height: auto;
                     flex-shrink: 0;
                     color: var(--Colors-primary, #FFF);
                     text-align: center;

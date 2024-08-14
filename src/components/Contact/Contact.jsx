@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from '../../assets/img/contact/logo.svg';
 import line from '../../assets/img/contact/line.svg';
 import location from '../../assets/img/contact/location.svg';
@@ -13,9 +13,62 @@ import aviao from '../../assets/img/contact/aviao.svg';
 import Header from "../Header/Header";
 import Rodape from "../Rodape/Rodape";
 import SectionThree from "../SectionThree/SectionThree";
-import minimap from "../../assets/img/contact/mapmini.svg"
+import minimap from "../../assets/img/contact/mapmini.svg";
+import icon from "../../assets/img/contact/icon.svg";
+import icontwo from "../../assets/img/contact/telephone.svg";
+import iconfour from "../../assets/img/contact/iconfour.svg";
+import changeMail from "../../assets/img/contact/telephone.svg"; // Imagem para o email
+import changeName from "../../assets/img/contact/changetelephone.svg"; // Imagem para o nome
+import changeTel from "../../assets/img/contact/changetelephone.svg"; // Imagem para o telefone
+import changeMsg from "../../assets/img/contact/changemsg.svg"; // Imagem para a mensagem
 
 const Contact = () => {
+    // Estados para gerenciar as imagens dos ícones dos inputs
+    const [emailIcon, setEmailIcon] = useState(iconfour);
+    const [nameIcon, setNameIcon] = useState(iconfour);
+    const [phoneIcon, setPhoneIcon] = useState(icontwo);
+    const [messageIcon, setMessageIcon] = useState(iconfour);
+
+    // Função para alterar a imagem ao focar
+    const handleFocus = (type) => {
+        switch(type) {
+            case 'email':
+                setEmailIcon(changeMail);
+                break;
+            case 'name':
+                setNameIcon(changeName);
+                break;
+            case 'phone':
+                setPhoneIcon(changeTel);
+                break;
+            case 'message':
+                setMessageIcon(changeMsg);
+                break;
+            default:
+                break;
+        }
+    };
+
+    // Função para alterar a imagem ao desfocar
+    const handleBlur = (type) => {
+        switch(type) {
+            case 'email':
+                setEmailIcon(iconfour);
+                break;
+            case 'name':
+                setNameIcon(iconfour);
+                break;
+            case 'phone':
+                setPhoneIcon(icontwo);
+                break;
+            case 'message':
+                setMessageIcon(iconfour);
+                break;
+            default:
+                break;
+        }
+    };
+
     const contactItems = [
         {
             icon: location,
@@ -49,7 +102,7 @@ const Contact = () => {
     return (
         <div className="contact-container">
             <Header />
-            
+
             <div className="contact-header">
                 <h2 className="contact-header-title">Fale Conosco</h2>
                 <img src={logo} alt="Header Image" className="contact-header-line" />
@@ -77,7 +130,6 @@ const Contact = () => {
                 <div className="contact-middle">
                     <div className="contact-map">
                         <iframe
-                            // src="https://www.google.com/maps/embed?pb=!1m19!1m12!1m3!1d63190.38171962932!2d-34.9503488!3d-8.1625088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m4!3e1!4m0!4m1!2sR.%20Cear%C3%A1%2C%201221%20-%20Funcion%C3%A1rios%2C%20Belo%20Horizonte%20-%20MG!5e0!3m2!1sen!2sbr!4v1723239923848!5m2!1sen!2sbr"
                             src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d60009.193831998666!2d-43.95653311046954!3d-19.94232288215977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbr!4v1723240393717!5m2!1sen!2sbr"
                             width="1920"
                             height="1080"
@@ -90,21 +142,89 @@ const Contact = () => {
                             aria-label="Mapa mostrando a localização do escritório em R. Ceará, 1221 - Funcionários, Belo Horizonte - MG"
                         ></iframe>
                     </div>
-                           <img 
-                            src={minimap} 
-                            alt="Mapa Estático" 
-                            className="static-map"
-                        />
+                    <img
+                        src={minimap}
+                        alt="Mapa Estático"
+                        className="static-map"
+                    />
 
                     <section className="contact-form">
                         <img src={aviao} alt="Form Icon" className="aviao" />
                         <h2 className="contact-form-title">Fale Conosco</h2>
                         <p className="contact-form-fed">Feedbacks</p>
                         <form className="contact-form-main">
-                            <input type="email" placeholder="Email" className="input-email" />
-                            <input type="text" placeholder="Nome" className="input-name" />
-                            <input type="tel" placeholder="Telefone" className="input-phone" />
-                            <textarea placeholder="Mensagem" className="input-message"></textarea>
+                            <div className="input-group">
+                                <div className="input-wrapper">
+                                    <img
+                                        src={call}
+                                        alt="Email Icon"
+                                        className="input-icon"
+                                    />
+                                    <input
+                                        type="email"
+                                        placeholder=""
+                                        className="input-email"
+                                        required
+                                        onFocus={() => handleFocus('email')}
+                                        onBlur={() => handleBlur('email')}
+                                    />
+                                    <label htmlFor="email" className="floating-label">Email</label>
+                                </div>
+                            </div>
+                            <div className="input-group">
+                                <div className="input-wrapper">
+                                    <img
+                                        src={call}
+                                        alt="Nome Icon"
+                                        className="input-icon"
+                                    />
+                                    <input
+                                        type="text"
+                                        placeholder=""
+                                        className="input-name"
+                                        required
+                                        onFocus={() => handleFocus('name')}
+                                        onBlur={() => handleBlur('name')}
+                                    />
+                                    <label htmlFor="name" className="floating-label">Nome</label>
+                                </div>
+                            </div>
+                            <div className="input-group">
+                                <div className="input-wrapper">
+                                    <img
+                                        src={phoneIcon}
+                                        alt="Telefone Icon"
+                                        className="input-icon highlight"
+                                    />
+                                    <input
+                                        type="tel"
+                                        placeholder=""
+                                        className="input-phone"
+                                        required
+                                        onFocus={() => handleFocus('phone')}
+                                        onBlur={() => handleBlur('phone')}
+                                    />
+                                    <label htmlFor="phone" className="floating-label">Telefone</label>
+                                </div>
+                            </div>
+                            <div className="input-group">
+                                <div className="input-wrapper">
+                                    <img
+                                        src={messageIcon}
+                                        alt="Mensagem Icon"
+                                        className="input-icon-text"
+                                    />
+                                    <textarea
+                                        placeholder=""
+                                        className="input-message"
+                                        required
+                                        onFocus={() => handleFocus('message')}
+                                        onBlur={() => handleBlur('message')}
+                                    ></textarea>
+                                    <label htmlFor="message" className="floating-label-msg">Mensagem</label>
+                                </div>
+                            </div>
+
                             <button type="submit" className="submit-button">Enviar Mensagem</button>
                         </form>
                     </section>
@@ -118,7 +238,7 @@ const Contact = () => {
                 <img src={img4} alt="Social Icon 4" />
                 <img src={img5} alt="Social Icon 5" />
             </section>
-            
+
             <SectionThree />
             <Rodape />
         </div>
