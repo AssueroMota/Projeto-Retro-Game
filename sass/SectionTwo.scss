@@ -68,7 +68,7 @@
                 display: none;
             }
 
-            @media (min-width:$tablet) and (max-width:$desktop-1) {
+            @media (min-width:$tablet) and (max-width:$desktop-2) {
                 right: 20%;
 
             }
@@ -122,7 +122,7 @@
                 line-height: normal;
             }
 
-            @media (min-width:$tablet) and (max-width:$desktop-1) {
+            @media (min-width:$tablet) and (max-width:$desktop-2) {
                 width: 1015px;
             }
         }
@@ -146,7 +146,7 @@
             flex-direction: column;
         }
 
-        @media (min-width:$tablet) and (max-width:$desktop-1) {
+        @media (min-width:$tablet) and (max-width:$desktop-2) {
             justify-content: normal;
             align-items: center;
             flex-direction: column;
@@ -201,7 +201,7 @@
                     background-blend-mode: soft-light, normal;
                 }
 
-                @media (min-width:$tablet) and (max-width:$desktop-1) {
+                @media (min-width:$tablet) and (max-width:$desktop-2) {
                     width: 650px;
                     height: auto;
                 }
@@ -229,7 +229,7 @@
                     display: none;
                 }
 
-                @media (min-width:$tablet) and (max-width:$desktop-1) {
+                @media (min-width:$tablet) and (max-width:$desktop-2) {
                     display: none;
                 }
 
@@ -290,7 +290,7 @@
                 margin-top: 48px;
             }
 
-            @media (min-width:$tablet) and (max-width:$desktop-1) {
+            @media (min-width:$tablet) and (max-width:$desktop-2) {
                 margin-top: 48px;
 
             }
@@ -475,7 +475,7 @@
             height: 98vh;
         }
 
-        @media (min-width:$tablet) and (max-width:$desktop-1) {
+        @media (min-width:$tablet) and (max-width:$desktop-2) {
             height: 140vh;
         }
 
@@ -606,7 +606,7 @@
                     margin-top: -32px;
                 }
 
-                @media (min-width:$tablet) and (max-width:$desktop-1) {
+                @media (min-width:$tablet) and (max-width:$desktop-2) {
                     width: 80%;
                 }
 
@@ -642,7 +642,7 @@
                 justify-content: flex-start;
             }
 
-            @media (min-width:$tablet) and (max-width:$desktop-1) {
+            @media (min-width:$tablet) and (max-width:$desktop-2) {
                 display: grid;
                 grid-auto-flow: column;
                 overflow-x: auto;
