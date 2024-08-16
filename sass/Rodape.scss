@@ -2,7 +2,12 @@
     // Estilo principal do rodapé
     background: #54B3B5;
     margin: 0;
-    
+
+    @media (min-width:$tablet) and (max-width:$desktop-1) {
+
+        margin-top: 6rem;
+    }
+
     .footer-top {
         display: flex;
         justify-content: space-between;
@@ -10,7 +15,13 @@
         margin: auto;
         padding: 70px;
 
-        @media (max-width:1024px) {
+        @media (max-width:$mobile) {
+            flex-direction: column;
+            padding: 0px;
+            align-items: center;
+        }
+
+        @media (min-width:$mobile) and (max-width:$tablet) {
             flex-direction: column;
             padding: 0px;
             align-items: center;
@@ -28,7 +39,12 @@
             cursor: pointer;
 
 
-            @media (max-width:1024px) {
+            @media (max-width:$mobile) {
+                margin-top: 64px;
+                gap: 34px;
+            }
+
+            @media (min-width:$mobile) and (max-width:$tablet) {
                 margin-top: 64px;
                 gap: 34px;
             }
@@ -39,7 +55,11 @@
             display: flex;
             gap: 42px;
 
-            @media (max-width:1024px) {
+            @media (max-width:$mobile) {
+                margin-top: 64px;
+            }
+
+            @media (min-width:$mobile) and (max-width:$tablet) {
                 margin-top: 64px;
             }
 
@@ -64,19 +84,32 @@
             margin: auto;
             width: 95%;
 
-            @media (max-width:1024px) {
+            @media (max-width:$mobile) {
                 margin-top: 78px;
+            }
+
+            @media (min-width:$mobile) and (max-width:$tablet) {
+                margin-top: 78px;
+            }
+
+            @media (min-width:$tablet) and (max-width:$desktop-1) {
+                width: 95%;
+                justify-content: space-between;
             }
 
             .footer-contact-main {
                 width: 33%;
 
-                @media (max-width:1024px) {
+                @media (max-width:$mobile) {
                     width: 100%;
+                }
 
+                @media (min-width:$mobile) and (max-width:$tablet) {
+                    width: 100%;
                 }
 
                 .footer-title {
+
                     color: #FFF;
                     font-family: Montserrat;
                     font-size: 24px;
@@ -87,8 +120,13 @@
                     text-align: center;
                     margin-bottom: 64px;
 
-                    @media (max-width:1024px) {
+                    @media (max-width:$mobile) {
                         margin-bottom: 8px;
+                    }
+
+                    @media (min-width:$mobile) and (max-width:$tablet) {
+                        margin-bottom: 8px;
+                        font-size: 32px;
                     }
                 }
 
@@ -100,7 +138,14 @@
                     margin-bottom: 32px;
                     position: relative;
 
-                    @media (max-width:1024px) {
+                    @media (max-width:$mobile) {
+                        flex-direction: column;
+                        gap: 0;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+                    @media (min-width:$mobile) and (max-width:$tablet) {
                         flex-direction: column;
                         gap: 0;
                         justify-content: center;
@@ -112,10 +157,14 @@
                         gap: 12px;
                         margin-top: 28px;
 
-                        @media (max-width:1024px) {
+                        @media (max-width:$mobile) {
                             align-items: center;
                             gap: 16px;
+                        }
 
+                        @media (min-width:$mobile) and (max-width:$tablet) {
+                            align-items: center;
+                            gap: 16px;
                         }
 
                         .footer-contact-icon {
@@ -123,7 +172,13 @@
                             height: 25px;
                             flex-shrink: 0;
 
-                            @media (max-width:1024px) {
+                            @media (max-width:$mobile) {
+                                width: 34.903px;
+                                height: 35px;
+                                flex-shrink: 0;
+                            }
+
+                            @media (min-width:$mobile) and (max-width:$tablet) {
                                 width: 34.903px;
                                 height: 35px;
                                 flex-shrink: 0;
@@ -149,7 +204,16 @@
                             margin-top: 8px;
                             width: 80%;
 
-                            @media (max-width:1024px) {
+                            @media (max-width:$mobile) {
+                                width: 231px;
+                            }
+
+                            @media (min-width:$mobile) and (max-width:$tablet) {
+                                width: 231px;
+                            }
+
+                            @media (min-width:$tablet) and (max-width:$desktop-1) {
+
                                 width: 231px;
                             }
                         }
@@ -163,9 +227,18 @@
                         position: absolute;
                         right: 2%;
 
-                        @media (max-width:1024px) {
+                        @media (max-width:$mobile) {
                             display: none;
                         }
+
+                        @media (min-width:$mobile) and (max-width:$tablet) {
+                            display: none;
+                        }
+
+                        @media (min-width:$tablet) and (max-width:$desktop-1) {
+                            display: none;
+                        }
+
                     }
                 }
             }
@@ -175,7 +248,15 @@
                 text-align: center;
                 position: relative;
 
-                @media (max-width:1024px) {
+                @media (max-width:$mobile) {
+                    display: none;
+                }
+
+                @media (min-width:$mobile) and (max-width:$tablet) {
+                    display: none;
+                }
+
+                @media (min-width:$tablet) and (max-width:$desktop-1) {
                     display: none;
                 }
 
@@ -191,7 +272,11 @@
                         height: 70px;
                         flex-shrink: 0;
 
-                        @media (max-width:1024px) {
+                        @media (max-width:$mobile) {
+                            display: none;
+                        }
+
+                        @media (min-width:$mobile) and (max-width:$tablet) {
                             display: none;
                         }
                     }
@@ -251,7 +336,15 @@
                     right: -2%;
                     top: 20%;
 
-                    @media (max-width:1024px) {
+                    @media (max-width:$mobile) {
+                        display: none;
+                    }
+
+                    @media (min-width:$mobile) and (max-width:$tablet) {
+                        display: none;
+                    }
+
+                    @media (min-width:$tablet) and (max-width:$desktop-1) {
                         display: none;
                     }
                 }
@@ -260,7 +353,11 @@
             .footer-follow {
                 width: 33%;
 
-                @media (max-width:1024px) {
+                @media (max-width:$mobile) {
+                    display: none;
+                }
+
+                @media (min-width:$mobile) and (max-width:$tablet) {
                     display: none;
                 }
 
@@ -385,7 +482,11 @@
             height: 3px;
             background: #C5C2D6;
 
-            @media (max-width:1024px) {
+            @media (max-width:$mobile) {
+                width: 100%;
+            }
+
+            @media (min-width:$mobile) and (max-width:$tablet) {
                 width: 100%;
             }
         }
@@ -402,7 +503,18 @@
             flex-shrink: 0;
             padding: 16px;
 
-            @media (max-width:1024px) {
+            @media (max-width:$mobile) {
+                color: var(--Colors-primary, #FFF);
+                text-align: center;
+                font-family: Montserrat;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                width: auto;
+            }
+
+            @media (min-width:$mobile) and (max-width:$tablet) {
                 color: var(--Colors-primary, #FFF);
                 text-align: center;
                 font-family: Montserrat;

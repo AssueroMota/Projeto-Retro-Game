@@ -53,7 +53,7 @@ const Header = () => {
               onClick={toggleMenu}
               className="close-icon"
             />
-                <nav className="sidebar-links">
+            <nav className="sidebar-links">
               {HeaderLinks.map((item, id) => (
                 item.link.startsWith('/') ? (
                   <Link to={item.link} key={id} onClick={toggleMenu}>
@@ -66,8 +66,6 @@ const Header = () => {
                 )
               ))}
             </nav>
-
-
 
             {/* <nav className="sidebar-links">
               {HeaderLinks.map((item, id) => (

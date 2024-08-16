@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import emailIcon from '../../assets/img/sectionThree/email.svg';
 
-const SectionThree = () => {
+const SectionThree = (props) => {
     const [email, setEmail] = useState('');
     const [emailError, setEmailError] = useState('');
     const [isSubmitting, setIsSubmitting] = useState(false);
@@ -48,7 +48,7 @@ const SectionThree = () => {
     };
 
     return (
-        <section className="newsletter-section">
+        <section className="newsletter-section" id={props.id}>
             <div className="newsletter-container">
                 <h1 className="newsletter-title">Inscreva-se na nossa newsletter</h1>
                 <p className="newsletter-description">

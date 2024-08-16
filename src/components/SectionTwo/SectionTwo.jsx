@@ -85,9 +85,9 @@ const SectionTwo = (props) => {
                     </div>
                 </div>
             </div>
-            <div className="team-section-two">
+            <div className="team-section-two" id="space">
                 <div className="team-header-two">
-                    <h1 className="team-title-two">Nosso espaço</h1>
+                    <h1 className="team-title-two" >Nosso espaço</h1>
                     {/* <img className="team-header-image-two" src={logo} alt="Equipe" /> */}
                 </div>
                 <div className="team-header-subtitle">

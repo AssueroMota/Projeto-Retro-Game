@@ -175,10 +175,10 @@ const Contact = () => {
                     <div className="contact-map">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d60009.193831998666!2d-43.95653311046954!3d-19.94232288215977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbr!4v1723240393717!5m2!1sen!2sbr"
-                            width="1920"
+                            width="100%"
                             height="1080"
                             className="responsive-map"
-                            style={{ border: "24" }}
+                            style={{ border: "6px" }}
                             allowFullScreen
                             loading="lazy"
                             referrerPolicy="no-referrer-when-downgrade"
