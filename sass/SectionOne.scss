@@ -158,13 +158,13 @@
 
             
 
-            @media (min-width:$tablet) and (max-width:$desktop-2) {
+            @media (min-width:$tablet) and (max-width:$desktop-3) {
                 display: flex;
                 gap: 32px;
                 align-items: center;
-                justify-content: space-between;
+                
                 margin-top: 0;
-                margin-left: -3rem;
+                
             }
 
 
@@ -217,7 +217,7 @@
                 align-items: center;
                 gap: 32px;
                 margin-top: 64px;
-                @media (min-width:$tablet) and (max-width:$desktop-2) {
+                @media (min-width:$tablet) and (max-width:$desktop-3) {
                     margin-top: 0px;
                 }
                 img {

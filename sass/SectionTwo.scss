@@ -68,9 +68,8 @@
                 display: none;
             }
 
-            @media (min-width:$tablet) and (max-width:$desktop-2) {
-                right: 20%;
-
+            @media (min-width:$tablet) and (max-width:$desktop-3) {
+                right: 20%
             }
         }
 
@@ -175,6 +174,10 @@
                 position: none;
             }
 
+            @media (min-width:$tablet) and (max-width:$desktop-3) {
+                justify-content: center;
+            }
+
             .team-experience-image {
                 width: 1043px;
                 height: 597px;
@@ -229,8 +232,8 @@
                     display: none;
                 }
 
-                @media (min-width:$tablet) and (max-width:$desktop-2) {
-                    display: none;
+                @media (min-width:$desktop-2) and (max-width:$desktop-3) {
+                    left:27.1rem;
                 }
 
                 .team-experiencie-title {
@@ -292,9 +295,10 @@
 
             @media (min-width:$tablet) and (max-width:$desktop-2) {
                 margin-top: 48px;
-
             }
-
+            @media (min-width:$tablet) and (max-width:$desktop-3) {
+                display: none;
+            }
             .experience-item {
 
                 display: flex;
@@ -642,19 +646,19 @@
                 justify-content: flex-start;
             }
 
-            @media (min-width:$tablet) and (max-width:$desktop-2) {
-                display: grid;
-                grid-auto-flow: column;
-                overflow-x: auto;
-                column-gap: 32px;
-                margin-left: -1rem;
-                // flex: 0 0 auto;
-                justify-content: flex-start;
+            @media (min-width:$tablet) and (max-width:$desktop-3) {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 32px;
             }
 
             .research-item {
                 width: 423px;
                 text-align: center;
+                @media (min-width:$tablet) and (max-width:$desktop-3) {
+                    height: 650px;
+                }
+                
 
                 @media (max-width:$mobile) {
                     text-align: start;

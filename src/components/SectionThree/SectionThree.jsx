@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import emailIcon from '../../assets/img/sectionThree/email.svg';
 
 const SectionThree = (props) => {
@@ -12,6 +12,11 @@ const SectionThree = (props) => {
         const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return regex.test(email);
     };
+    useEffect(() => {
+        AOS.init({
+            duration: 700, // Duração da animação
+        });
+    }, []);
 
     // Função para lidar com mudanças no input de e-mail
     const handleEmailChange = (event) => {
@@ -49,7 +54,7 @@ const SectionThree = (props) => {
 
     return (
         <section className="newsletter-section" id={props.id}>
-            <div className="newsletter-container">
+            <div className="newsletter-container" data-aos="zoom-in-down">
                 <h1 className="newsletter-title">Inscreva-se na nossa newsletter</h1>
                 <p className="newsletter-description">
                     Mantenha-se atualizado com as últimas novidades, dicas exclusivas e atualizações diretamente no seu e-mail. Fique por dentro de tudo o que acontece no Espaço Amarelo.

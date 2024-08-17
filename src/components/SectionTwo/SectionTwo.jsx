@@ -92,20 +92,20 @@ const SectionTwo = (props) => {
             </div>
             <div className="team-section-two" id="space">
                 <div className="team-header-two">
-                    <h1 className="team-title-two" >Nosso espaço</h1>
+                    <h1 className="team-title-two" data-aos="fade-down">Nosso espaço</h1>
                     {/* <img className="team-header-image-two" src={logo} alt="Equipe" /> */}
                 </div>
                 <div className="team-header-subtitle">
-                    <p className="team-header-content">
+                    <p className="team-header-content" data-aos="fade-up">
                         Descubra como nosso espaço acolhedor e bem equipado foi cuidadosamente planejado
                         para oferecer as mais diversas experiências que auxiliam nos avanços terapêuticos dos objetivos traçados junto a familia,
                         através de uma experiência positiva e eficaz de desenvolvimento e bem-estar.
                     </p>
                 </div>
 
-                <div className="research-section">
+                <div className="research-section" >
                     {research.map((item, index) => (
-                        <div key={index} className="research-item">
+                        <div key={index} className="research-item" data-aos="flip-right">
                             <img src={item.img} alt={item.title} className="research-item-image" />
                             <div className="research-section-content">
                                 <h3 className="research-item-title">{item.title}</h3>
