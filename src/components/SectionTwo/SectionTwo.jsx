@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import logo from '../../assets/img/sectionTwo/Logo.svg';
 import imgToShowMobile from '../../assets/img/sectionTwo/LogoMobile.png';
 import trio from '../../assets/img/sectionTwo/trio.png';
@@ -8,10 +8,15 @@ import workdays2 from '../../assets/img/sectionTwo/workdays2.png';
 import workdays3 from '../../assets/img/sectionTwo/workdays3.png';
 import workdays4 from '../../assets/img/sectionTwo/workdays4.png';
 
-AOS.init();
 
 
 const SectionTwo = (props) => {
+    
+    useEffect(() => {
+        AOS.init({
+            duration: 700, // Duração da animação
+        });
+    }, []);
 
     const imgToShow = window.innerWidth > 1024 ? trio : imgToShowMobile;
 
