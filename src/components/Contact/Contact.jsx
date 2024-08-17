@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import logo from '../../assets/img/contact/logo.svg';
 import line from '../../assets/img/contact/line.svg';
 import location from '../../assets/img/contact/location.svg';
@@ -142,7 +142,12 @@ const Contact = () => {
             ]
         }
     ];
-
+    
+    useEffect(() => {
+        AOS.init({
+            duration: 700, // Duração da animação
+        });
+    }, []);
     return (
         <div className="contact-container">
             <Header />
@@ -153,7 +158,7 @@ const Contact = () => {
             </div>
 
             <div className="contact-main-middle">
-                <div className="contact-info">
+                <div className="contact-info" data-aos="flip-down">
                     {contactItems.map((item, index) => (
                         <div key={index} className="contact-item">
                             <div className="contact-item-header">
@@ -192,7 +197,7 @@ const Contact = () => {
                         className="static-map"
                     />
 
-                    <section className="contact-form">
+                    <section className="contact-form" data-aos="fade-left">
                         <img src={aviao} alt="Form Icon" className="aviao" />
                         <h2 className="contact-form-title">Fale Conosco</h2>
                         <p className="contact-form-fed">Feedbacks, Recomendações ou Dúvidas</p>
@@ -291,11 +296,11 @@ const Contact = () => {
             </div>
             <section className="contact-social">
                 <h3 className="contact-social-title">Galeria</h3>
-                <img src={img1} alt="Social Icon 1" />
-                <img src={img2} alt="Social Icon 2" />
-                <img src={img3} alt="Social Icon 3" />
-                <img src={img4} alt="Social Icon 4" />
-                <img src={img5} alt="Social Icon 5" />
+                <img src={img1} alt="Social Icon 1" data-aos="fade-left"/>
+                <img src={img2} alt="Social Icon 2" data-aos="zoom-in"/>
+                <img src={img3} alt="Social Icon 3" data-aos="zoom-in"/>
+                <img src={img4} alt="Social Icon 4" data-aos="zoom-in"/>
+                <img src={img5} alt="Social Icon 5" data-aos="fade-right"/>
             </section>
 
             <SectionThree />
