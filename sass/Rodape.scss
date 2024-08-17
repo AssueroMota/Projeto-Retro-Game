@@ -3,7 +3,7 @@
     background: #54B3B5;
     margin: 0;
 
-    @media (min-width:$tablet) and (max-width:$desktop-2) {
+    @media (min-width:$tablet) and (max-width:$desktop-3) {
 
         margin-top: 6rem;
     }
@@ -212,7 +212,7 @@
                                 width: 231px;
                             }
 
-                            @media (min-width:$tablet) and (max-width:$desktop-2) {
+                            @media (min-width:$tablet) and (max-width:$desktop-3) {
                                 width: 231px;
                             }
                         }
