@@ -31,7 +31,7 @@
         flex-direction: column;
         position: relative;
         gap: 48px;
-        top: 16rem;
+        top: 12rem;
         width: 50%;
         left: 183px;
 
@@ -108,10 +108,8 @@
             }
 
             @media (min-width:$tablet) and (max-width:$desktop-2) {
-
-
                 font-size: 50px;
-                padding-top: 180px;
+                padding-top: 30px;
             }
 
         }
@@ -158,11 +156,15 @@
 
         .section-one__container__midias {
 
+            
+
             @media (min-width:$tablet) and (max-width:$desktop-2) {
                 display: flex;
                 gap: 32px;
                 align-items: center;
                 justify-content: space-between;
+                margin-top: 0;
+                margin-left: -3rem;
             }
 
 
@@ -194,6 +196,9 @@
                     font-size: 18px;
                     margin-top: 0px;
                 }
+                @media (min-width:$tablet) and (max-width:$desktop-2) {
+                    margin-top: 0px;
+                }
 
 
                 &:hover {
@@ -211,7 +216,10 @@
                 display: flex;
                 align-items: center;
                 gap: 32px;
-
+                margin-top: 64px;
+                @media (min-width:$tablet) and (max-width:$desktop-2) {
+                    margin-top: 0px;
+                }
                 img {
                     width: 30px;
                     height: 30px;

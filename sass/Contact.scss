@@ -68,6 +68,10 @@
                 margin-top: 52px;
                 align-items: center;
             }
+            @media (min-width:$tablet) and (max-width:$desktop-2) {
+                gap: 32px;
+            }
+
            
             .contact-item {
                 width: 320px;
@@ -174,7 +178,7 @@
             .contact-map {
                 position: relative;
                 border-radius: 16px;
-
+                overflow: hidden;
                 @media (max-width:$mobile) {
                     display: none;
                 }
@@ -183,7 +187,7 @@
                 }
 
             }
-
+     
             .static-map {
                 display: none;
 

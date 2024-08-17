@@ -25,20 +25,19 @@
   @media (min-width:$tablet) and (max-width:$desktop-2) {
     justify-content: space-around;
     width: 100%;
-    margin: auto;
+    display: flex;
   }
- 
+
 
   .header {
     align-items: center;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 95%;
 
     @media (min-width:$tablet) and (max-width:$desktop-2) {
-      width: 100%;
-      justify-content: space-around;
-      margin: auto;
+      justify-content: space-between;
+      width: 88%;
     }
 
     .header-content img {
