@@ -4,7 +4,7 @@ import MainPhotoMobile from '../../assets/img/sectionOne/MainPhotoMobile.png';
 import facebook from '../../assets/img/sectionOne/facebook.svg';
 import twiter from '../../assets/img/sectionOne/twiter.svg';
 import instagram from '../../assets/img/sectionOne/instagram.svg';
-
+AOS.init();
 
 const SectionOne = () => {
 
@@ -12,7 +12,7 @@ const SectionOne = () => {
 
     return (
         <section className="section-one">
-            <div className="section-one__content">
+            <div className="section-one__content"data-aos="fade-right" data-aos-offset="300">
                 <h1 className="section-one__title">Terapia Ocupacional no Desenvolvimento Infantil</h1>
                 <p className="section-one__description">
                     Descubra como a terapia ocupacional pode ajudar seu filho a desenvolver habilidades motoras, sociais, emocionais e de auto-cuidado.
@@ -38,7 +38,7 @@ const SectionOne = () => {
                     </div>
                 </div>
             </div>
-            <img className="section-one__image" src={logoToShow} alt="Ilustração de Terapia Ocupacional" />
+            <img className="section-one__image" src={logoToShow} alt="Ilustração de Terapia Ocupacional" data-aos="zoom-in-left"/>
         </section>
     );
 };

@@ -14,6 +14,7 @@ import Rodape from './components/Rodape/Rodape.jsx';
 AOS.init();
 
 function App() {
+  AOS.init();
   return (
     <>
       <Header />

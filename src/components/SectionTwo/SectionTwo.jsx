@@ -8,7 +8,7 @@ import workdays2 from '../../assets/img/sectionTwo/workdays2.png';
 import workdays3 from '../../assets/img/sectionTwo/workdays3.png';
 import workdays4 from '../../assets/img/sectionTwo/workdays4.png';
 
-
+AOS.init();
 
 
 const SectionTwo = (props) => {
@@ -41,18 +41,18 @@ const SectionTwo = (props) => {
     return (
         <section className="team-section" id={props.id}>
             <div className="team-header">
-                <h1 className="team-title">Equipe Especializada no Desenvolvimento Infantil</h1>
-                <img className="team-header-image" src={logo} alt="Equipe" />
+                <h1 className="team-title" data-aos="fade-down">Equipe Especializada no Desenvolvimento Infantil</h1>
+                <img className="team-header-image" src={logo} alt="Equipe" data-aos="fade-up"/>
             </div>
             <div className='team-subtitle'>
-                <p className="team-description">
+                <p className="team-description" data-aos="zoom-in">
                     Confie em nossa equipe experiente para guiar seu filho em cada passo do caminho para uma vida mais independente e satisfatória.
                 </p>
             </div>
             <div className="team-experience">
                 <div className="team-experience-model-main">
-                    <img className="team-experience-image" src={imgToShow} alt="Experiência" />
-                    <div className="team-experience-summary">
+                    <img className="team-experience-image" src={imgToShow} alt="Experiência" data-aos="fade-right"/>
+                    <div className="team-experience-summary" data-aos="fade-up">
                         <div className="team-experiencie-title">
                             <span className="experience-years">+ 06</span>
                             <span className="experience-label">Anos de Experiência</span>
@@ -62,7 +62,7 @@ const SectionTwo = (props) => {
                         </p>
                     </div>
                 </div>
-                <div className="team-experience-details">
+                <div className="team-experience-details" data-aos="fade-left">
                     <div className="experience-item">
                         <img className="experience-item-image" src={check} alt="Detalhe 1" />
                         <span className="experience-item-years">+ 06</span>
