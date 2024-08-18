@@ -221,7 +221,10 @@
                 @media (min-width:100px) and (max-width:$mobile) {
                     justify-content: center;
                 }
-                @media (min-width:800px) and (max-width:$desktop-3) {
+                @media (min-width:800px) and (max-width:1200px) {
+justify-content: center;
+                }
+                @media (min-width:$desktop-1) and (max-width:$desktop-3) {
                     margin-top: 0px;
                     justify-content: center;
                 }
