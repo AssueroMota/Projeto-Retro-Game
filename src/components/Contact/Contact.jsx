@@ -153,8 +153,8 @@ const Contact = () => {
             <Header />
 
             <div className="contact-header">
-                <h2 className="contact-header-title">Fale Conosco</h2>
-                <img src={logo} alt="Header Image" className="contact-header-line" />
+                <h2 className="contact-header-title" data-aos="fade-down">Fale Conosco</h2>
+                <img src={logo} alt="Header Image" className="contact-header-line" data-aos="fade-up"/>
             </div>
 
             <div className="contact-main-middle">

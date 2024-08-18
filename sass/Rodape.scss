@@ -2,9 +2,10 @@
     // Estilo principal do rodapé
     background: #54B3B5;
     margin: 0;
-
-    @media (min-width:$tablet) and (max-width:$desktop-3) {
-
+@media (min-width:1000px) and (max-width:$tablet) {
+    margin-top: 50rem;
+}
+    @media (min-width:$desktop-2) and (max-width:$desktop-3) {
         margin-top: 6rem;
     }
 
