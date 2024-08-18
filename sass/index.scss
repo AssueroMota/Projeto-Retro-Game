@@ -1,3 +1,4 @@
+
 .header-main {
   width: 100%;
   position: fixed;
@@ -14,6 +15,7 @@
     align-items: center;
     display: flex;
     width: 100%;
+    overflow-y: hidden;
   }
 
   @media (min-width:$mobile) and (max-width:$tablet) {

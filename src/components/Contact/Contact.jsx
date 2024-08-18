@@ -201,7 +201,13 @@ const Contact = () => {
                         <img src={aviao} alt="Form Icon" className="aviao" />
                         <h2 className="contact-form-title">Fale Conosco</h2>
                         <p className="contact-form-fed">Feedbacks, Recomendações ou Dúvidas</p>
-                        <form onSubmit={handleSubmit} className="contact-form-main">
+                        
+                        <form
+        action="https://formsubmit.co/assueromota@hotmail.com"  // Substitua pelo seu e-mail
+        method="POST"
+        className="contact-form-main"
+        onSubmit={handleSubmit} 
+    >
                             <div className="input-group">
                                 <div className="input-wrapper">
                                     <img
@@ -260,6 +266,8 @@ const Contact = () => {
                                         onFocus={() => handleFocus('phone')}
                                         onBlur={() => handleBlur('phone')}
                                     />
+                                    <input type="hidden" name="_subject" value="New submission!"></input>
+                                    <input type="hidden" name="_captcha" value="false"></input>
                                     <label htmlFor="phone" className="floating-label">Telefone</label>
                                 </div>
                             </div>

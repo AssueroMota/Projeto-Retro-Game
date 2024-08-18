@@ -22,10 +22,10 @@ function App() {
   return (
     <>
       <Header />
-      <SectionOne id="equipe" />
-      <SectionTwo id="space" />
+       <SectionOne id="equipe" />
+    <SectionTwo id="space" />
       <SectionThree />
-      <Rodape />
+      <Rodape /> 
 
     </>
   )
