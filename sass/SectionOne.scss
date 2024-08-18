@@ -217,10 +217,11 @@
                 align-items: center;
                 gap: 32px;
                 margin-top: 64px;
+
                 @media (min-width:100px) and (max-width:$mobile) {
                     justify-content: center;
                 }
-                @media (min-width:$tablet) and (max-width:$desktop-3) {
+                @media (min-width:800px) and (max-width:$desktop-3) {
                     margin-top: 0px;
                     justify-content: center;
                 }
