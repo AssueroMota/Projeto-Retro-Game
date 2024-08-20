@@ -18,7 +18,7 @@ const SectionTwo = (props) => {
         });
     }, []);
 
-    const imgToShow = window.innerWidth > 1024 ? trio : imgToShowMobile;
+    const imgToShow = window.innerWidth > 1024 ? trio : trio;
 
     const research = [
         {

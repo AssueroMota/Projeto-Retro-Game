@@ -36,13 +36,14 @@
                 font-weight: 700;
                 line-height: normal;
             }
-@media (min-width:$mobile) and (max-width:$mobilePlus) {
-    width: 700px;
-    font-size: 50px;
-}
+
+            @media (min-width:$mobile) and (max-width:$mobilePlus) {
+                width: 900px;
+                font-size: 80px;
+            }
 
 
-            @media (min-width:$mobile) and (max-width:$tablet) {
+            @media (min-width:$tablet) and (max-width:$tablet) {
                 flex-shrink: 0;
                 color: var(--Basic-1, var(--Colors-primary, #FFF));
                 text-align: center;
@@ -89,10 +90,8 @@
             margin-top: 8px;
             margin-bottom: 32px;
         }
-   
-@media (min-width:$mobile) and (max-width:$mobilePlus) {
-    
-}
+
+        @media (min-width:$mobile) and (max-width:$mobilePlus) {}
 
         .team-description {
             width: 1288px;
@@ -118,11 +117,19 @@
                 font-weight: 400;
                 line-height: normal;
             }
+
             @media (min-width:$mobile) and (max-width:$mobilePlus) {
-    width: 600px;
-    font-size: 24px;
+                width: 700px;
+                font-size: 38px;
+                height: auto;
             }
-            @media (min-width:800px) and (max-width:$tablet) {
+
+            @media (min-width:$tablet) and (max-width:$tabletPlus) {
+                width: 600px;
+                font-size: 24px;
+            }
+
+            @media (min-width:$tablet) and (max-width:$tabletPlus) {
                 width: 580px;
                 flex-shrink: 0;
                 color: var(--Basic-1, var(--Colors-primary, #FFF));
@@ -152,7 +159,14 @@
             flex-direction: column;
         }
 
-        @media (min-width:$mobile) and (max-width:$tablet) {
+        @media (min-width:$mobile) and (max-width:$mobilePlus) {
+            flex-direction: column;
+            align-items: center;
+            flex-direction: column;
+        }
+
+
+        @media (min-width:$tablet) and (max-width:$tablet) {
             justify-content: normal;
             align-items: center;
             flex-direction: column;
@@ -208,7 +222,11 @@
                     background-blend-mode: soft-light, normal;
                 }
 
-                @media (min-width:$mobile) and (max-width:$tablet) {
+                @media (min-width:$mobile) and (max-width:$mobilePlus) {
+                    margin-top: 5rem;
+                }
+
+                @media (min-width:$tablet) and (max-width:$tablet) {
                     width: 487px;
                     height: 310px;
                     flex-shrink: 0;
@@ -246,7 +264,7 @@
                 }
 
                 @media (min-width:$desktop-2) and (max-width:$desktop-3) {
-                    left:27.1rem;
+                    left: 27.1rem;
                 }
 
                 .team-experiencie-title {
@@ -309,9 +327,11 @@
             @media (min-width:$tablet) and (max-width:$desktop-2) {
                 margin-top: 48px;
             }
+
             @media (min-width:$tablet) and (max-width:$desktop-3) {
                 display: none;
             }
+
             .experience-item {
 
                 display: flex;
@@ -342,7 +362,24 @@
                     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
                 }
 
-                @media (min-width:$mobile) and (max-width:$tablet) {
+                @media (min-width:$mobile) and (max-width:$mobilePlus) {
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                    background-color: #FFF;
+                    display: flex;
+                    width: 650px;
+                    height: 80px;
+                    padding: 8px 20px;
+                    align-items: center;
+                    gap: 20px;
+                    flex-shrink: 0;
+                    border-radius: 25px;
+                    background: var(--Basic-1, #FFF);
+                    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+                }
+
+                @media (min-width:$tablet) and (max-width:$tablet) {
                     display: flex;
                     max-width: 420px;
                     height: 74px;
@@ -379,7 +416,7 @@
                         flex-shrink: 0;
                     }
 
-                    @media (min-width:$mobile) and (max-width:$tablet) {
+                    @media (min-width:$tablet) and (max-width:$tablet) {
                         width: 60px;
                         height: 39.411px;
                         flex-shrink: 0;
@@ -411,7 +448,7 @@
                         line-height: normal;
                     }
 
-                    @media (min-width:$mobile) and (max-width:$tablet) {
+                    @media (min-width:$tablet) and (max-width:$tablet) {
                         color: #54B3B5;
                         text-align: center;
                         font-family: Montserrat;
@@ -449,7 +486,7 @@
                         line-height: normal;
                     }
 
-                    @media (min-width:$mobile) and (max-width:$tablet) {
+                    @media (min-width:$tablet) and (max-width:$tablet) {
                         color: #54B3B5;
                         font-family: Montserrat;
                         font-size: 20px;
@@ -531,8 +568,12 @@
                     margin-top: 64px;
                     margin-bottom: 12px;
                 }
+                @media (min-width:$mobile) and (max-width:$mobilePlus) {
+                    margin-top: 48px;
+                    height: 0;
+                }
 
-                @media (min-width:$mobile) and (max-width:$tablet) {
+                @media (min-width:$tablet) and (max-width:$tablet) {
                     width: 396px;
                     height: auto;
                     flex-shrink: 0;
@@ -611,7 +652,12 @@
                     margin-top: -32px;
                 }
 
-                @media (min-width:$mobile) and (max-width:$tablet) {
+                @media (min-width:$mobile) and (max-width: $mobilePlus) {
+                    width: 800px;
+                    height: auto;
+                }
+
+                @media (min-width:$tablet) and (max-width:$tablet) {
                     color: var(--Basic-1, var(--Colors-primary, #FFF));
                     text-align: center;
                     font-family: Montserrat;
@@ -668,10 +714,11 @@
             .research-item {
                 width: 423px;
                 text-align: center;
+
                 @media (min-width:$tablet) and (max-width:$desktop-3) {
                     height: 650px;
                 }
-                
+
 
                 @media (max-width:$mobile) {
                     text-align: start;
