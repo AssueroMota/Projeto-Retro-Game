@@ -84,7 +84,7 @@
             margin-top: 8px;
             margin-bottom: 32px;
         }
-
+   
         .team-description {
             width: 1288px;
             height: 64px;
@@ -628,7 +628,7 @@
             margin-bottom: 25px;
 
             @media (max-width:$mobile) {
-                display: grid;
+                display: none;
                 grid-auto-flow: column;
                 overflow-x: auto;
                 column-gap: 0px;
