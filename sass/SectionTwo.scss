@@ -319,7 +319,7 @@
 
                 @media (max-width:$mobile) {
                     display: flex;
-                    max-width: 342px;
+                    width: 320px;
                     height: 74px;
                     padding: 8px 20px;
                     align-items: center;
@@ -628,7 +628,7 @@
             margin-bottom: 25px;
 
             @media (max-width:$mobile) {
-                display: none;
+                display: grid;
                 grid-auto-flow: column;
                 overflow-x: auto;
                 column-gap: 0px;
