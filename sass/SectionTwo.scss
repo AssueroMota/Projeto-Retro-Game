@@ -284,6 +284,7 @@
                         font-style: normal;
                         font-weight: 700;
                         line-height: normal;
+                      
                     }
 
                     .experience-label {
@@ -293,6 +294,7 @@
                         font-style: normal;
                         font-weight: 700;
                         line-height: normal;
+                       
                     }
                 }
 
@@ -305,6 +307,7 @@
                     line-height: normal;
                     margin-top: 32px;
                     width: 397px;
+                   
                 }
 
             }
@@ -450,6 +453,9 @@
                         font-weight: 700;
                         line-height: normal;
                     }
+                    @media (min-width:$mobile) and (max-width:$mobilePlus) {
+                        font-size: 50px;
+                    }
 
                     @media (min-width:$tablet) and (max-width:$tablet) {
                         color: #54B3B5;
@@ -488,7 +494,9 @@
                         font-weight: 400;
                         line-height: normal;
                     }
-
+                    @media (min-width:$mobile) and (max-width:$mobilePlus) {
+                        font-size: 32px;
+                    }
                     @media (min-width:$tablet) and (max-width:$tablet) {
                         color: #54B3B5;
                         font-family: Montserrat;
@@ -525,10 +533,10 @@
         }
 
         @media (min-width:391px) and (max-width:$mobile) {
-            height: 118vh;
+            height: 115vh;
         }
         @media (min-width:$mobile) and (max-width:$mobilePlus) {
-            height: 110vh;
+            height: 55vh;
         }
 
         @media (min-width:$tablet) and (max-width:$tablet) {
