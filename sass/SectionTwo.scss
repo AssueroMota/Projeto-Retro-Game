@@ -25,7 +25,7 @@
             margin-top: 64px;
 
             @media (max-width:$mobile) {
-                max-width: 392px;
+                max-width: 345px;
                 height: 195px;
                 flex-shrink: 0;
                 color: var(--Basic-1, var(--Colors-primary, #FFF));
