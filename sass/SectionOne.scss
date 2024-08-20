@@ -323,12 +323,12 @@ justify-content: center;
         width: 50%;
 
         @media (max-width: $mobile) {
-            width: 402px;
+            max-width: 340px;
             margin-top: 18rem;
             margin-bottom: 4rem;
         }
 
-        @media (min-width:$mobile) and (max-width:$tablet) {
+        @media (min-width:900px) and (max-width:$tablet) {
             width: 500px;
             margin-top: 16rem;
             margin-bottom: 4rem;
