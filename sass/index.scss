@@ -58,7 +58,7 @@
         flex-shrink: 0;
       }
 
-      @media (min-width:$mobile) and (max-width:$tablet) {
+      @media (min-width:$tablet) and (max-width:$tablet) {
         width: 318px;
         height: 48px;
         flex-shrink: 0;
