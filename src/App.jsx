@@ -19,13 +19,14 @@ function App() {
       duration: 700, // Duração da animação
     });
   }, []);
+  
   return (
     <>
       <Header />
-       <SectionOne id="equipe" />
-    <SectionTwo id="space" />
+      <SectionOne id="equipe" />
+      <SectionTwo id="space" />
       <SectionThree />
-      <Rodape /> 
+      <Rodape />
 
     </>
   )

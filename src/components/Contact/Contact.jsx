@@ -89,28 +89,28 @@ const Contact = () => {
 
     // Função para lidar com o envio do formulário
     const handleSubmit = (event) => {
-        event.preventDefault();
+        // event.preventDefault();
 
         // Valida o e-mail
         if (!validateEmail(email)) {
             setEmailError('E-mail inválido');
             return;
         }
-        
+
         setEmailError(''); // Limpa o erro, se houver
 
         setIsSubmitting(true);
 
         // Simulação de envio de dados
-        setTimeout(() => {
-            setIsSubmitting(false);
-            setSubmitSuccess(true);
-            setEmail('');
-            setName('');
-            setPhone('');
-            setMessage('');
-            setTimeout(() => setSubmitSuccess(false), 3000); // Limpa a mensagem de sucesso após 3 segundos
-        }, 1000);
+        // setTimeout(() => {
+        //     setIsSubmitting(false);
+        //     setSubmitSuccess(true);
+        //     setEmail('');
+        //     setName('');
+        //     setPhone('');
+        //     setMessage('');
+        //     setTimeout(() => setSubmitSuccess(false), 3000);
+        // }, 2000);
     };
 
     const contactItems = [
@@ -142,7 +142,7 @@ const Contact = () => {
             ]
         }
     ];
-    
+
     useEffect(() => {
         AOS.init({
             duration: 700, // Duração da animação
@@ -154,7 +154,7 @@ const Contact = () => {
 
             <div className="contact-header">
                 <h2 className="contact-header-title" data-aos="fade-down">Fale Conosco</h2>
-                <img src={logo} alt="Header Image" className="contact-header-line" data-aos="fade-up"/>
+                <img src={logo} alt="Header Image" className="contact-header-line" data-aos="fade-up" />
             </div>
 
             <div className="contact-main-middle">
@@ -201,13 +201,15 @@ const Contact = () => {
                         <img src={aviao} alt="Form Icon" className="aviao" />
                         <h2 className="contact-form-title">Fale Conosco</h2>
                         <p className="contact-form-fed">Feedbacks, Recomendações ou Dúvidas</p>
-                        
-                        <form
-        action="https://formsubmit.co/assueromota@hotmail.com"  // Substitua pelo seu e-mail
-        method="POST"
-        className="contact-form-main"
-        onSubmit={handleSubmit} 
-    >
+
+                        {/* <form
+                            action="https://formsubmit.co/assueromota@hotmail.com"  
+                            method="POST"
+                            className="contact-form-main"
+                            onSubmit={handleSubmit}
+                        > */}
+                        <form action="https://formsubmit.co/assuero@bigapplepia.com" method="POST" className="contact-form-main" onSubmit={handleSubmit}>
+
                             <div className="input-group">
                                 <div className="input-wrapper">
                                     <img
@@ -217,6 +219,7 @@ const Contact = () => {
                                     />
                                     <input
                                         type="email"
+                                        name="Email do Cliente"
                                         value={email}
                                         onChange={(e) => setEmail(e.target.value)}
                                         placeholder=""
@@ -238,6 +241,7 @@ const Contact = () => {
                                     />
                                     <input
                                         type="text"
+                                        name="Nome do Cliente"
                                         value={name}
                                         onChange={(e) => setName(e.target.value)}
                                         placeholder=""
@@ -258,6 +262,7 @@ const Contact = () => {
                                     />
                                     <input
                                         type="tel"
+                                        name="Telefone do Cliente"
                                         value={phone}
                                         onChange={(e) => setPhone(e.target.value)}
                                         placeholder=""
@@ -266,9 +271,6 @@ const Contact = () => {
                                         onFocus={() => handleFocus('phone')}
                                         onBlur={() => handleBlur('phone')}
                                     />
-                                    <input type="hidden" name="_subject" value="New submission!"></input>
-                                    <input type="hidden" name="_captcha" value="false"></input>
-                                    <label htmlFor="phone" className="floating-label">Telefone</label>
                                 </div>
                             </div>
                             <div className="input-group">
@@ -279,6 +281,7 @@ const Contact = () => {
                                         className="input-icon-text"
                                     />
                                     <textarea
+                                        name="Mensagem do Cliente"
                                         value={message}
                                         onChange={(e) => setMessage(e.target.value)}
                                         placeholder=""
@@ -291,6 +294,11 @@ const Contact = () => {
                                 </div>
                             </div>
 
+                            <input type="hidden" name="_next" value="https://espacoamarelo.vercel.app/"/>
+                            <input type="hidden" name="_subject" value="Mensagem vinda do WEBSITE ESPACO AMARELO"/>
+                            <input type="hidden" name="_captcha" value="false"/>
+                            <input type="hidden" name="_template" value="table"/>
+                            <input type="hidden" name="_cc" value="leandrocalixto.eng@gmail.com"/>
                             <button
                                 type="submit"
                                 className="submit-button"
@@ -298,17 +306,20 @@ const Contact = () => {
                             >
                                 {isSubmitting ? 'Enviando...' : (submitSuccess ? 'Mensagem enviada com sucesso!' : 'Enviar Mensagem')}
                             </button>
+
+
+
                         </form>
                     </section>
                 </div>
             </div>
             <section className="contact-social">
                 <h3 className="contact-social-title">Galeria</h3>
-                <img src={img1} alt="Social Icon 1" data-aos="fade-left"/>
-                <img src={img2} alt="Social Icon 2" data-aos="zoom-in"/>
-                <img src={img3} alt="Social Icon 3" data-aos="zoom-in"/>
-                <img src={img4} alt="Social Icon 4" data-aos="zoom-in"/>
-                <img src={img5} alt="Social Icon 5" data-aos="fade-right"/>
+                <img src={img1} alt="Social Icon 1" data-aos="fade-left" />
+                <img src={img2} alt="Social Icon 2" data-aos="zoom-in" />
+                <img src={img3} alt="Social Icon 3" data-aos="zoom-in" />
+                <img src={img4} alt="Social Icon 4" data-aos="zoom-in" />
+                <img src={img5} alt="Social Icon 5" data-aos="fade-right" />
             </section>
 
             <SectionThree />
