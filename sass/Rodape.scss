@@ -2,9 +2,11 @@
     // Estilo principal do rodapé
     background: #54B3B5;
     margin: 0;
-@media (min-width:1000px) and (max-width:$tablet) {
-    margin-top: 50rem;
-}
+
+    @media (min-width:1000px) and (max-width:$tablet) {
+        margin-top: 50rem;
+    }
+
     @media (min-width:$desktop-2) and (max-width:$desktop-3) {
         margin-top: 6rem;
     }
@@ -45,7 +47,13 @@
                 gap: 34px;
             }
 
-            @media (min-width:$mobile) and (max-width:$tablet) {
+            @media (min-width:$mobile) and (max-width:$mobilePlus) {
+                margin-top: 64px;
+                gap: 98px;
+                font-size: 34px;
+            }
+
+            @media (min-width:$tablet) and (max-width:$tablet) {
                 margin-top: 64px;
                 gap: 34px;
             }
@@ -59,8 +67,11 @@
             @media (max-width:$mobile) {
                 margin-top: 64px;
             }
-
-            @media (min-width:$mobile) and (max-width:$tablet) {
+            @media (min-width:$mobile) and (max-width:$mobilePlus) {
+                margin-top: 128px;
+                gap:64px;
+            }
+            @media (min-width:$tablet) and (max-width:$tablet) {
                 margin-top: 64px;
             }
 
@@ -97,15 +108,18 @@
                 width: 95%;
                 justify-content: space-around;
             }
+
             @media (min-width:$tablet) and (max-width:$desktop-3) {
                 justify-content: space-around;
             }
 
             .footer-contact-main {
                 width: 33%;
+
                 @media (min-width:$tablet) and (max-width:$desktop-3) {
                     width: 50%;
                 }
+
                 @media (max-width:$mobile) {
                     width: 100%;
                 }
@@ -129,8 +143,11 @@
                     @media (max-width:$mobile) {
                         margin-bottom: 8px;
                     }
-
-                    @media (min-width:$mobile) and (max-width:$tablet) {
+                    @media (min-width:$mobile) and (max-width:$mobilePlus) {
+                        margin-bottom: 8px;
+                        font-size: 60px;
+                    }
+                    @media (min-width:$tablet) and (max-width:$tablet) {
                         margin-bottom: 8px;
                         font-size: 32px;
                     }
@@ -182,7 +199,7 @@
                                 width: 34.903px;
                                 height: 35px;
                                 flex-shrink: 0;
-                            }    
+                            }
 
                             @media (min-width:$mobile) and (max-width:$tablet) {
                                 width: 34.903px;
@@ -213,8 +230,12 @@
                             @media (max-width:$mobile) {
                                 width: 231px;
                             }
+                            @media (min-width:$mobile) and (max-width:$mobilePlus) {
+                                width: 400px;
+                                font-size: 24px;
+                            }
 
-                            @media (min-width:$mobile) and (max-width:$tablet) {
+                            @media (min-width:$tablet) and (max-width:$tablet) {
                                 width: 231px;
                             }
 
@@ -357,9 +378,11 @@
 
             .footer-follow {
                 width: 33%;
+
                 @media (min-width:$tablet) and (max-width:$desktop-3) {
                     width: 35%;
                 }
+
                 @media (max-width:$mobile) {
                     display: none;
                 }

@@ -527,8 +527,11 @@
         @media (min-width:391px) and (max-width:$mobile) {
             height: 118vh;
         }
+        @media (min-width:$mobile) and (max-width:$mobilePlus) {
+            height: 110vh;
+        }
 
-        @media (min-width:$mobile) and (max-width:$tablet) {
+        @media (min-width:$tablet) and (max-width:$tablet) {
             height: 98vh;
         }
 
@@ -660,6 +663,7 @@
                     width: 800px;
                     height: auto;
                     font-size: 32px;
+                    padding-top: 2rem;
                 }
 
                 @media (min-width:$tablet) and (max-width:$tablet) {
