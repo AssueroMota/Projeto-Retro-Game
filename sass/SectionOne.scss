@@ -12,14 +12,16 @@
         margin: auto;
         margin-top: 24rem;
         width: 100%;
-        
     }
+
 
     @media (min-width:$mobile) and (max-width:$tablet) {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 24rem;
+        padding-top: 24rem;
+        width: 98%;
+        margin:auto;
     }
 
     @media (min-width:$tablet) and (max-width:$desktop-2) {
@@ -45,7 +47,6 @@
             left: 0;
             top: 0;
             height: 0vh;
-            width: 100%;
         }
 
         @media (min-width:$mobile) and (max-width:$tablet) {
@@ -94,8 +95,14 @@
                 font-weight: 700;
                 line-height: normal;
             }
+@media (min-width:$mobile) and (max-width:$mobilePlus) {
+font-size: 50px;
+width: 700px;
+text-align: center;
+padding-top: 8rem;
+}
 
-            @media (min-width:$mobile) and (max-width:$tablet) {
+            @media (min-width:$tablet) and (max-width:$tablet) {
                 display: flex;
                 // width: 370px;
                 // height: 203px;
@@ -139,8 +146,13 @@
                 line-height: normal;
                 max-width: 344px;
             }
+            @media (min-width:$mobile) and (max-width:$mobilePlus) {
+            font-size: 32px;
+            width: 550px;
+            text-align: center;
+            }
 
-            @media (min-width:$mobile) and (max-width:$tablet) {
+            @media (min-width:$tablet) and (max-width:$tablet) {
                 color: var(--Basic-2, #707070);
                 text-align: center;
                 font-family: Montserrat;
@@ -149,6 +161,7 @@
                 font-weight: 400;
                 line-height: normal;
                 // width: 364px;
+                width: 100%;
             }
 
             @media (min-width:$tablet) and (max-width:$desktop-2) {
@@ -195,8 +208,12 @@
                 @media (max-width: $mobile) {
                     font-size: 18px;
                 }
+                @media (min-width:$mobile) and (max-width:$mobilePlus) {
+                    font-size: 24px;
+                    width: 320px;
+                }
 
-                @media (min-width:$mobile) and (max-width:$tablet) {
+                @media (min-width:$tablet) and (max-width:$tablet) {
                     font-size: 18px;
                     margin-top: 0px;
                 }
@@ -324,12 +341,14 @@ justify-content: center;
         width: 50%;
 
         @media (max-width: $mobile) {
-            width: 385px;
+            width: 402px;
             margin-top: 18rem;
             margin-bottom: 4rem;
         }
-
-        @media (min-width:$mobile) and (max-width:$tablet) {
+@media (min-width:$mobile) and (max-width:$mobilePlus) {
+    margin-top: 25rem;
+}
+        @media (min-width:$tablet) and (max-width:$tablet) {
             width: 500px;
             margin-top: 16rem;
             margin-bottom: 4rem;

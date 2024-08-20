@@ -25,7 +25,7 @@
             margin-top: 64px;
 
             @media (max-width:$mobile) {
-                max-width: 345px;
+                max-width: 320px;
                 height: 195px;
                 flex-shrink: 0;
                 color: var(--Basic-1, var(--Colors-primary, #FFF));
@@ -36,6 +36,11 @@
                 font-weight: 700;
                 line-height: normal;
             }
+@media (min-width:$mobile) and (max-width:$mobilePlus) {
+    width: 700px;
+    font-size: 50px;
+}
+
 
             @media (min-width:$mobile) and (max-width:$tablet) {
                 flex-shrink: 0;
@@ -85,6 +90,10 @@
             margin-bottom: 32px;
         }
    
+@media (min-width:$mobile) and (max-width:$mobilePlus) {
+    
+}
+
         .team-description {
             width: 1288px;
             height: 64px;
@@ -109,7 +118,10 @@
                 font-weight: 400;
                 line-height: normal;
             }
-
+            @media (min-width:$mobile) and (max-width:$mobilePlus) {
+    width: 600px;
+    font-size: 24px;
+            }
             @media (min-width:800px) and (max-width:$tablet) {
                 width: 580px;
                 flex-shrink: 0;

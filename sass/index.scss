@@ -1,5 +1,8 @@
 *{
-  overflow-x: clip;
+  @media (max-width:$mobile) {
+  overflow-x:clip; 
+  }
+  
 }
 .header-main {
   width: 100%;
