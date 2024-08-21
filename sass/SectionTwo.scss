@@ -37,7 +37,7 @@
                 line-height: normal;
             }
 
-            @media (min-width:$mobile) and (max-width:$mobilePlus) {
+            @media (min-width:$mobileM) and (max-width:$mobilePlus) {
                 width: 900px;
                 font-size: 80px;
             }
@@ -70,7 +70,7 @@
                 display: none;
             }
 
-            @media (min-width:$mobile) and (max-width:$tablet) {
+            @media (min-width:$mobileM) and (max-width:$tablet) {
                 display: none;
             }
 
@@ -91,7 +91,7 @@
             margin-bottom: 32px;
         }
 
-        @media (min-width:$mobile) and (max-width:$mobilePlus) {}
+        @media (min-width:$mobileM) and (max-width:$mobilePlus) {}
 
         .team-description {
             width: 1288px;
@@ -118,7 +118,7 @@
                 line-height: normal;
             }
 
-            @media (min-width:$mobile) and (max-width:$mobilePlus) {
+            @media (min-width:$mobileM) and (max-width:$mobilePlus) {
                 width: 700px;
                 font-size: 38px;
                 height: auto;
@@ -160,7 +160,7 @@
             flex-direction: column;
         }
 
-        @media (min-width:$mobile) and (max-width:$mobilePlus) {
+        @media (min-width:$mobileM) and (max-width:$mobilePlus) {
             flex-direction: column;
             align-items: center;
             flex-direction: column;
@@ -195,7 +195,7 @@
                 position: none;
             }
 
-            @media (min-width:$mobile) and (max-width:$tablet) {
+            @media (min-width:$mobileM) and (max-width:$tablet) {
                 width: auto;
                 // display: flex;
                 margin-top: 0;
@@ -223,7 +223,7 @@
                     background-blend-mode: soft-light, normal;
                 }
 
-                @media (min-width:$mobile) and (max-width:$mobilePlus) {
+                @media (min-width:$mobileM) and (max-width:$mobilePlus) {
                     margin-top: 5rem;
                     width: 900px;
                     object-fit: cover;
@@ -262,7 +262,7 @@
                     display: none;
                 }
 
-                @media (min-width:$mobile) and (max-width:$tablet) {
+                @media (min-width:$mobileM) and (max-width:$tablet) {
                     display: none;
                 }
 
@@ -326,7 +326,7 @@
                 margin-top: 48px;
             }
 
-            @media (min-width:$mobile) and (max-width:$tablet) {
+            @media (min-width:$mobileM) and (max-width:$tablet) {
                 margin-top: 48px;
             }
 
@@ -368,7 +368,7 @@
                     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
                 }
 
-                @media (min-width:$mobile) and (max-width:$mobilePlus) {
+                @media (min-width:$mobileM) and (max-width:$mobilePlus) {
                     display: flex;
                     align-items: center;
                     gap: 20px;
@@ -453,7 +453,7 @@
                         font-weight: 700;
                         line-height: normal;
                     }
-                    @media (min-width:$mobile) and (max-width:$mobilePlus) {
+                    @media (min-width:$mobileM) and (max-width:$mobilePlus) {
                         font-size: 50px;
                     }
 
@@ -494,7 +494,7 @@
                         font-weight: 400;
                         line-height: normal;
                     }
-                    @media (min-width:$mobile) and (max-width:$mobilePlus) {
+                    @media (min-width:$mobileM) and (max-width:$mobilePlus) {
                         font-size: 32px;
                     }
                     @media (min-width:$tablet) and (max-width:$tablet) {
@@ -535,7 +535,7 @@
         @media (min-width:391px) and (max-width:$mobile) {
             height: 115vh;
         }
-        @media (min-width:$mobile) and (max-width:$mobilePlus) {
+        @media (min-width:$mobileM) and (max-width:$mobilePlus) {
             height: 55vh;
         }
 
@@ -582,7 +582,7 @@
                     margin-top: 64px;
                     margin-bottom: 12px;
                 }
-                @media (min-width:$mobile) and (max-width:$mobilePlus) {
+                @media (min-width:$mobileM) and (max-width:$mobilePlus) {
                     margin-top: 48px;
                     height: 0;
                     font-size: 80px;
@@ -615,7 +615,7 @@
                     display: none;
                 }
 
-                @media (min-width:$mobile) and (max-width:$tablet) {
+                @media (min-width:$mobileM) and (max-width:$tablet) {
                     display: none;
                 }
 
@@ -639,7 +639,7 @@
                 margin-top: 48px;
             }
 
-            @media (min-width:$mobile) and (max-width:$tablet) {
+            @media (min-width:$mobileM) and (max-width:$tablet) {
                 width: auto;
                 height: auto;
                 margin-top: 48px;
@@ -667,7 +667,7 @@
                     margin-top: -32px;
                 }
 
-                @media (min-width:$mobile) and (max-width: $mobilePlus) {
+                @media (min-width:$mobileM) and (max-width: $mobilePlus) {
                     width: 800px;
                     height: auto;
                     font-size: 32px;
@@ -712,7 +712,7 @@
                 justify-content: flex-start;
             }
 
-            @media (min-width:$mobile) and (max-width:$tablet) {
+            @media (min-width:$mobileM) and (max-width:$tablet) {
                 display: grid;
                 grid-auto-flow: column;
                 overflow-x: auto;
@@ -741,7 +741,7 @@
                     text-align: start;
                 }
 
-                @media (min-width:$mobile) and (max-width:$tablet) {
+                @media (min-width:$mobileM) and (max-width:$tablet) {
                     text-align: start;
                 }
 
@@ -762,7 +762,7 @@
                         flex-shrink: 0;
                     }
 
-                    @media (min-width:$mobile) and (max-width:$tablet) {
+                    @media (min-width:$mobileM) and (max-width:$tablet) {
                         width: 400px;
                         // height: 405px;
                         flex-shrink: 0;
@@ -791,7 +791,7 @@
                         flex-shrink: 0;
                     }
 
-                    @media (min-width:$mobile) and (max-width:$tablet) {
+                    @media (min-width:$mobileM) and (max-width:$tablet) {
                         width: 300px;
                         // height: 405px;
                         flex-shrink: 0;
@@ -822,7 +822,7 @@
                             opacity: .7;
                         }
 
-                        @media (min-width:$mobile) and (max-width:$tablet) {
+                        @media (min-width:$mobileM) and (max-width:$tablet) {
                             font-size: 17px;
                             opacity: .7;
                         }

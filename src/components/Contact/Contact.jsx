@@ -294,11 +294,11 @@ const Contact = () => {
                                 </div>
                             </div>
 
-                            <input type="hidden" name="_next" value="https://espacoamarelo.vercel.app/"/>
-                            <input type="hidden" name="_subject" value="Mensagem vinda do WEBSITE ESPACO AMARELO"/>
-                            <input type="hidden" name="_captcha" value="false"/>
-                            <input type="hidden" name="_template" value="table"/>
-                            <input type="hidden" name="_cc" value="leandrocalixto.eng@gmail.com"/>
+                            <input type="hidden" name="_next" value="https://espacoamarelo.vercel.app/" />
+                            <input type="hidden" name="_subject" value="Mensagem vinda do WEBSITE ESPACO AMARELO" />
+                            <input type="hidden" name="_captcha" value="false" />
+                            <input type="hidden" name="_template" value="table" />
+                            <input type="hidden" name="_cc" value="leandrocalixto.eng@gmail.com" />
                             <button
                                 type="submit"
                                 className="submit-button"

@@ -23,7 +23,7 @@
     overflow-y: hidden;
   }
 
-  @media (min-width:$mobile) and (max-width:$tablet) {
+  @media (min-width:$mobileM) and (max-width:$tablet) {
     align-items: center;
     display: flex;
     width: 100%;
@@ -109,7 +109,7 @@
           display: none;
         }
 
-        @media (min-width:$mobile) and (max-width:$tablet) {
+        @media (min-width:$mobileM) and (max-width:$tablet) {
           display: none;
         }
 
@@ -124,7 +124,7 @@
       display: flex;
     }
 
-    @media (min-width:$mobile) and (max-width:$tablet) {
+    @media (min-width:$mobileM) and (max-width:$tablet) {
       display: flex;
     }
 

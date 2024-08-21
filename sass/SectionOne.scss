@@ -15,7 +15,7 @@
     }
 
 
-    @media (min-width:$mobile) and (max-width:$tablet) {
+    @media (min-width:$mobileM) and (max-width:$tablet) {
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -50,7 +50,7 @@
             width: 100%;
         }
 
-        @media (min-width:$mobile) and (max-width:$tablet) {
+        @media (min-width:$mobileM) and (max-width:$tablet) {
             flex-direction: column;
             justify-content: center;
             align-items: center;
@@ -98,7 +98,7 @@
                 line-height: normal;
             }
 
-            @media (min-width:$mobile) and (max-width:$mobilePlus) {
+            @media (min-width:$mobileM) and (max-width:$mobilePlus) {
                 font-size: 80px;
                 width: 900px;
                 text-align: center;
@@ -150,7 +150,7 @@
                 max-width: 344px;
             }
 
-            @media (min-width:$mobile) and (max-width:$mobilePlus) {
+            @media (min-width:$mobileM) and (max-width:$mobilePlus) {
                 font-size: 38px;
                 width: 880px;
                 text-align: center;
@@ -213,7 +213,7 @@
                     font-size: 18px;
                 }
 
-                @media (min-width:$mobile) and (max-width:$mobilePlus) {
+                @media (min-width:$mobileM) and (max-width:$mobilePlus) {
                     font-size: 32px;
                     margin-top: 12px;
                     width: 520px;
@@ -249,7 +249,7 @@
                 @media (min-width:100px) and (max-width:$mobile) {
                     justify-content: center;
                 }
-                @media (min-width:$mobile) and (max-width:$mobilePlus) {
+                @media (min-width:$mobileM) and (max-width:$mobilePlus) {
                     justify-content: center;
                 }
                 @media (min-width:$tablet) and (max-width:$tabletPlus) {
@@ -358,7 +358,7 @@
             margin-bottom: 4rem;
         }
 
-        @media (min-width:$mobile) and (max-width:$mobilePlus) {
+        @media (min-width:$mobileM) and (max-width:$mobilePlus) {
             margin-top: 25rem;
             margin-bottom: 2rem;
             width: 70%;
@@ -381,7 +381,7 @@
                 flex-shrink: 0;
             }
 
-            @media (min-width:$mobile) and (max-width:$tablet) {
+            @media (min-width:$mobileM) and (max-width:$tablet) {
                 width: 402px;
                 height: 332px;
                 flex-shrink: 0;
