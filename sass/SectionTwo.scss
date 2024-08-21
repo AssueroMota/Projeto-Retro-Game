@@ -620,11 +620,9 @@
         @media (min-width:360px) and (max-width:375px) {
             height: 121vh;
         }
-
         @media (min-width:377px) and (max-width:390px) {
             height: 116vh;
         }
-
         @media (min-width:391px) and (max-width:$mobile) {
             height: 101vh;
         }
@@ -637,11 +635,9 @@
         @media (min-width:$mobileM) and (max-width:$mobilePlus) {
             height: 55vh;
         }
-
         @media (min-width:$tablet) and (max-width:$tablet) {
             height: 98vh;
         }
-
         @media (min-width:$tablet) and (max-width:$desktop-2) {
             height: 140vh;
         }

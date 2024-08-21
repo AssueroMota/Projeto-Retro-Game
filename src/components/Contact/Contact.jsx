@@ -271,6 +271,7 @@ const Contact = () => {
                                         onFocus={() => handleFocus('phone')}
                                         onBlur={() => handleBlur('phone')}
                                     />
+                                    <label htmlFor="telefone" className="floating-label">Telefone</label>
                                 </div>
                             </div>
                             <div className="input-group">
