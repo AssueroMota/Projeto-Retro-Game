@@ -1,9 +1,13 @@
-*{
+* {
   @media (max-width:$mobile) {
-  overflow-x:clip; 
+    overflow-x: clip;
   }
-  
+
+  @media (min-width:$above) and (max-width:$mobileP) {
+    overflow-x: clip;
+  }
 }
+
 .header-main {
   width: 100%;
   position: fixed;
@@ -16,11 +20,18 @@
   padding-bottom: 10px;
   overflow-x: hidden;
 
-  @media (max-width: $mobile) {
+  @media (max-width:$mobile) {
     align-items: center;
     display: flex;
     width: 100%;
-    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+
+  @media (min-width:$above) and (max-width:$mobileP) {
+    align-items: center;
+    display: flex;
+    width: 100%;
+    overflow-x: hidden;
   }
 
   @media (min-width:$mobileM) and (max-width:$tablet) {
@@ -53,6 +64,12 @@
       flex-shrink: 0;
 
       @media (max-width: $mobile) {
+        width: 318px;
+        height: 48px;
+        flex-shrink: 0;
+      }
+
+      @media (min-width:$above) and (max-width:$mobileP) {
         width: 318px;
         height: 48px;
         flex-shrink: 0;
@@ -109,6 +126,10 @@
           display: none;
         }
 
+        @media (min-width:$above) and (max-width:$mobileP) {
+          display: none;
+        }
+
         @media (min-width:$mobileM) and (max-width:$tablet) {
           display: none;
         }
@@ -121,6 +142,10 @@
     display: none;
 
     @media (max-width: $mobile) {
+      display: flex;
+    }
+
+    @media (min-width:$above) and (max-width:$mobileP) {
       display: flex;
     }
 

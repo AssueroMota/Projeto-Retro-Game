@@ -27,6 +27,9 @@
         @media (max-width:$mobile) {
             display: none;
         }
+        @media (min-width:$above) and (max-width:$mobileP) {
+            display: none;
+        }
 
         @media (min-width:$mobileM) and (max-width:$tablet) {
             display: none;

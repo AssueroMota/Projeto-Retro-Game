@@ -315,11 +315,13 @@ const Contact = () => {
             </div>
             <section className="contact-social">
                 <h3 className="contact-social-title">Galeria</h3>
-                <img src={img1} alt="Social Icon 1" data-aos="fade-left" />
-                <img src={img2} alt="Social Icon 2" data-aos="zoom-in" />
-                <img src={img3} alt="Social Icon 3" data-aos="zoom-in" />
-                <img src={img4} alt="Social Icon 4" data-aos="zoom-in" />
-                <img src={img5} alt="Social Icon 5" data-aos="fade-right" />
+                <div className="contact-social-img">
+                    <img src={img1} alt="Social Icon 1" data-aos="fade-left" />
+                    <img src={img2} alt="Social Icon 2" data-aos="zoom-in" />
+                    <img src={img3} alt="Social Icon 3" data-aos="zoom-in" />
+                    <img src={img4} alt="Social Icon 4" data-aos="zoom-in" />
+                    <img src={img5} alt="Social Icon 5" data-aos="fade-right" />
+                </div>
             </section>
 
             <SectionThree />
