@@ -618,7 +618,7 @@
         height: 120vh;
 
         @media (min-width:360px) and (max-width:375px) {
-            height: 121vh;
+            height: 125vh;
         }
         @media (min-width:377px) and (max-width:390px) {
             height: 116vh;
@@ -871,7 +871,7 @@
             .research-item {
                 width: 423px;
                 text-align: center;
-
+                
                 @media (min-width:$tablet) and (max-width:$desktop-3) {
                     height: 650px;
                 }
