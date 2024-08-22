@@ -621,19 +621,19 @@
             height: 125vh;
         }
         @media (min-width:377px) and (max-width:390px) {
-            height: 116vh;
+            height: 120vh;
         }
         @media (min-width:391px) and (max-width:$mobile) {
-            height: 101vh;
+            height: 111vh;
         }
         @media (min-width:$above) and (max-width:809px) {
-            height: 85vh;
+            height: 95vh;
         }
         @media (min-width:810px) and (max-width:$mobileP) {
-            height: 105vh;
+            height: 115vh;
         }
         @media (min-width:$mobileM) and (max-width:$mobilePlus) {
-            height: 55vh;
+            height: 65vh;
         }
         @media (min-width:$tablet) and (max-width:$tablet) {
             height: 98vh;
