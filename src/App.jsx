@@ -4,12 +4,7 @@ import './app.css'
 import '../sass/global.scss'
 
 import Header from './components/Header/Header.jsx';
-
-
-import SectionOne from './components/SectionOne/SectionOne.jsx';
-import SectionTwo from './components/SectionTwo/SectionTwo.jsx';
-import SectionThree from './components/SectionThree/SectionThree.jsx';
-import Rodape from './components/Rodape/Rodape.jsx';
+import Content from './components/Content/Content.jsx';
 import { useEffect } from 'react';
 
 
@@ -19,14 +14,15 @@ function App() {
       duration: 700, // Duração da animação
     });
   }, []);
-  
+
   return (
     <>
       <Header />
-      <SectionOne id="equipe" />
+      <Content />
+      {/* <SectionOne id="equipe" />
       <SectionTwo id="space" />
       <SectionThree />
-      <Rodape />
+      <Rodape /> */}
 
     </>
   )

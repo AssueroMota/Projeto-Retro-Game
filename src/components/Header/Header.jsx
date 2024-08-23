@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import menu from '../../assets/img/header/header__menu.svg';
 import close from '../../assets/img/header/menu__close.svg';
-import logo from '../../assets/img/header/Logo.svg';
-import logomobile from '../../assets/img/header/logomobile.svg';
+import logo from '../../assets/img/header/GameRetro.svg';
+import logomobile from '../../assets/img/header/GameRetro.svg';
 import MdMenu from '../../assets/img/header/MdMenu.svg';
-
+import play from '../../assets/img/header/play.svg';
 
 
 const Header = () => {
@@ -13,10 +13,8 @@ const Header = () => {
 
 
   const HeaderLinks = [
-    { name: 'Home', link: '/' },
-    { name: 'Equipe', link: '#equipe' },
-    { name: 'Nosso Espaço', link: '#space' },
-    { name: 'Contato', link: '/contact' }
+    { name: 'Sobre Nos', link: '/' },
+    { name: 'Entrar em Contato', link: '/' },
   ];
 
   const toggleMenu = () => {
@@ -31,14 +29,27 @@ const Header = () => {
         <div className="header-content">
           <Link to='/'><img src={logoToShow} alt="Logo" /></Link>
         </div>
-        <nav className="nav-links">
-          {HeaderLinks.map((item, id) => (
-            <Link className='LinksHeader' to={item.link} key={id}>
-              {item.name}
-            </Link>
-          ))}
-        </nav>
+        <div className='header-content-second'>
+          <nav className="nav-links">
+            {HeaderLinks.map((item, id) => (
+              <Link className='LinksHeader' to={item.link} key={id}>
+                {item.name}
+              </Link>
+            ))}
+          </nav>
 
+          <div className='header-btn'>
+            <img src={play} alt="" className='header-btn-img' />
+            <p className='header-cp'>Comprar Produto</p>
+          </div>
+           <div className='header-btn-mobile'>
+            <img src={play} alt="" className='header-btn-img' />
+          </div>
+        </div>
+
+
+
+        {/* Menu Side BAR PARA MOBILE */}
         <div className='header-menu-sidebar'>
           <img
             src={MdMenu}
@@ -66,14 +77,6 @@ const Header = () => {
                 )
               ))}
             </nav>
-
-            {/* <nav className="sidebar-links">
-              {HeaderLinks.map((item, id) => (
-                <Link to={item.link} key={id} onClick={toggleMenu}>
-                  {item.name}
-                </Link>
-              ))}
-            </nav> */}
           </div>
         </div>
       </header>
